@@ -1,0 +1,523 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{29D8B819-A6C3-42A0-9E49-47333A0192A9}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Moda_System</RootNamespace>
+    <AssemblyName>Moda System</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>ModaSystem.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Canducci.Zip, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\CanducciCep.3.0.0\lib\net451\Canducci.Zip.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServerCompact, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.SqlServerCompact.6.2.0\lib\net45\EntityFramework.SqlServerCompact.dll</HintPath>
+    </Reference>
+    <Reference Include="EnvDTE, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="MaterialSkin, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MaterialSkin.0.2.1\lib\MaterialSkin.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.Grid.Base, Version=16.4460.0.42, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+    <Reference Include="Syncfusion.Grid.Windows, Version=16.4460.0.42, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+    <Reference Include="Syncfusion.Shared.Base, Version=16.4460.0.42, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+    <Reference Include="Syncfusion.Shared.Windows, Version=16.4460.0.42, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+    <Reference Include="Syncfusion.SpellChecker.Base, Version=16.4460.0.42, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+    <Reference Include="Syncfusion.Tools.Base, Version=16.4460.0.42, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+    <Reference Include="Syncfusion.Tools.Windows, Version=16.4460.0.42, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.SqlServerCe, Version=4.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.SqlServer.Compact.4.0.8876.1\lib\net40\System.Data.SqlServerCe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Design" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Classes\1 - Model\BarrasPro.cs" />
+    <Compile Include="Classes\1 - Model\Empresa.cs" />
+    <Compile Include="Classes\1 - Model\ErrosDB.cs" />
+    <Compile Include="Classes\1 - Model\Fornecedor.cs" />
+    <Compile Include="Classes\1 - Model\Marca.cs" />
+    <Compile Include="Classes\1 - Model\PrecosPro.cs" />
+    <Compile Include="Classes\1 - Model\Produto.cs" />
+    <Compile Include="Classes\1 - Model\SaldoEstoque.cs" />
+    <Compile Include="Classes\1 - Model\SYS000.cs" />
+    <Compile Include="Classes\1 - Model\TabPreco.cs" />
+    <Compile Include="Classes\1 - Model\Unidade.cs" />
+    <Compile Include="Classes\1 - Model\Grupo.cs" />
+    <Compile Include="Classes\1 - Model\SubGrupo.cs" />
+    <Compile Include="Classes\1 - Model\Estoque.cs" />
+    <Compile Include="Classes\1 - Model\Usuario.cs" />
+    <Compile Include="Classes\2 - Configuracoes\BarrasConf.cs" />
+    <Compile Include="Classes\2 - Configuracoes\EmpresaConf.cs" />
+    <Compile Include="Classes\2 - Configuracoes\EstoqueConf.cs" />
+    <Compile Include="Classes\2 - Configuracoes\FornecedorConf.cs" />
+    <Compile Include="Classes\2 - Configuracoes\GrupoConf.cs" />
+    <Compile Include="Classes\2 - Configuracoes\MarcaConf.cs" />
+    <Compile Include="Classes\2 - Configuracoes\PrecosProConf.cs" />
+    <Compile Include="Classes\2 - Configuracoes\ProdutoConf.cs" />
+    <Compile Include="Classes\2 - Configuracoes\SaldoEstoqueConf.cs" />
+    <Compile Include="Classes\2 - Configuracoes\SubGrupoConf.cs" />
+    <Compile Include="Classes\2 - Configuracoes\SYS000Conf.cs" />
+    <Compile Include="Classes\2 - Configuracoes\TabPrecoConf.cs" />
+    <Compile Include="Classes\2 - Configuracoes\UnidadeConf.cs" />
+    <Compile Include="Classes\2 - Configuracoes\UsuarioConf.cs" />
+    <Compile Include="Classes\2 - Configuracoes\VendedorConf.cs" />
+    <Compile Include="Classes\3 - Interfaces\IRepositorioBase.cs" />
+    <Compile Include="Classes\3 - Interfaces\IBarrasProRepositorio.cs" />
+    <Compile Include="Classes\3 - Interfaces\IEmpresaRepositorio.cs" />
+    <Compile Include="Classes\3 - Interfaces\IEstoqueRepositorio.cs" />
+    <Compile Include="Classes\3 - Interfaces\IFornecedorRepositorio.cs" />
+    <Compile Include="Classes\3 - Interfaces\IGrupoRepositorio.cs" />
+    <Compile Include="Classes\3 - Interfaces\IMarcaRepositorio.cs" />
+    <Compile Include="Classes\3 - Interfaces\IPrecosProRepositorio.cs" />
+    <Compile Include="Classes\3 - Interfaces\IProdutoRepositorio.cs" />
+    <Compile Include="Classes\3 - Interfaces\ISaldoEstoqueRepositorio.cs" />
+    <Compile Include="Classes\3 - Interfaces\ISubGrupoRepositorio.cs" />
+    <Compile Include="Classes\3 - Interfaces\ITabPrecoRepositorio.cs" />
+    <Compile Include="Classes\3 - Interfaces\IUnidadeRepositorio.cs" />
+    <Compile Include="Classes\3 - Interfaces\IUsuarioRepositorio.cs" />
+    <Compile Include="Classes\3 - Interfaces\IVendedorRepositorio.cs" />
+    <Compile Include="Classes\4 - Repositorios\EmpresaRepositorio.cs" />
+    <Compile Include="Classes\4 - Repositorios\EstoqueRepositorio.cs" />
+    <Compile Include="Classes\4 - Repositorios\FornecedorRepositorio.cs" />
+    <Compile Include="Classes\4 - Repositorios\GrupoRepositorio.cs" />
+    <Compile Include="Classes\4 - Repositorios\MarcaRepositorio.cs" />
+    <Compile Include="Classes\4 - Repositorios\PrecosProRepositorio.cs" />
+    <Compile Include="Classes\4 - Repositorios\ProdutoRepositorio.cs" />
+    <Compile Include="Classes\4 - Repositorios\SaldoEstoqueRepositorio.cs" />
+    <Compile Include="Classes\4 - Repositorios\SubGrupoRepositorio.cs" />
+    <Compile Include="Classes\4 - Repositorios\TabPrecoRepositorio.cs" />
+    <Compile Include="Classes\4 - Repositorios\UnidadeRepositorio.cs" />
+    <Compile Include="Classes\4 - Repositorios\UsuarioRepositorio.cs" />
+    <Compile Include="Classes\4 - Repositorios\VendedorRepositorio.cs" />
+    <Compile Include="Classes\4 - Repositorios\BarrasProRepositorio.cs" />
+    <Compile Include="Classes\4 - Repositorios\RepositorioBase.cs" />
+    <Compile Include="Classes\5 - Contexto\ContextoDB.cs" />
+    <Compile Include="Classes\0 - Antigas\AtualizaBD.cs" />
+    <Compile Include="Classes\0 - Antigas\CriaTabelasBD.cs" />
+    <Compile Include="Classes\0 - Antigas\DadosCadastros.cs" />
+    <Compile Include="Classes\0 - Antigas\DadosConsultas.cs" />
+    <Compile Include="Classes\0 - Antigas\Funcoes.cs" />
+    <Compile Include="Classes\0 - Antigas\InsertsPadroes.cs" />
+    <Compile Include="Classes\0 - Antigas\Modelos.cs" />
+    <Compile Include="Classes\1 - Model\Vendedor.cs" />
+    <Compile Include="Formularios\Cadastros\Empresa\CadEmpresa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Cadastros\Empresa\CadEmpresa.Designer.cs">
+      <DependentUpon>CadEmpresa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Cadastros\Empresa\CadFornecedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Cadastros\Empresa\CadFornecedor.Designer.cs">
+      <DependentUpon>CadFornecedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Cadastros\Estoque\CadGrupo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Cadastros\Estoque\CadGrupo.Designer.cs">
+      <DependentUpon>CadGrupo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Cadastros\Estoque\CadMarca.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Cadastros\Estoque\CadMarca.Designer.cs">
+      <DependentUpon>CadMarca.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Cadastros\Estoque\CadSGrupo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Cadastros\Estoque\CadSGrupo.Designer.cs">
+      <DependentUpon>CadSGrupo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Cadastros\Estoque\CadEstoque.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Cadastros\Estoque\CadEstoque.Designer.cs">
+      <DependentUpon>CadEstoque.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Cadastros\Estoque\CadProduto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Cadastros\Estoque\CadProduto.Designer.cs">
+      <DependentUpon>CadProduto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Cadastros\Empresa\CadUsuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Cadastros\Empresa\CadUsuarios.Designer.cs">
+      <DependentUpon>CadUsuarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Cadastros\Empresa\CadIni.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Cadastros\Empresa\CadIni.Designer.cs">
+      <DependentUpon>CadIni.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Cadastros\Estoque\CadUnidade.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Cadastros\Estoque\CadUnidade.Designer.cs">
+      <DependentUpon>CadUnidade.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Cadastros\Estoque\Precos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Cadastros\Estoque\Precos.Designer.cs">
+      <DependentUpon>Precos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Cadastros\Estoque\TabelaPreco.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Cadastros\Estoque\TabelaPreco.Designer.cs">
+      <DependentUpon>TabelaPreco.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Consultas\Estoque\ConsGrupo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Consultas\Estoque\ConsGrupo.Designer.cs">
+      <DependentUpon>ConsGrupo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Consultas\Estoque\ConsEstoque.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Consultas\Estoque\ConsEstoque.Designer.cs">
+      <DependentUpon>ConsEstoque.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Consultas\Empresa\ConsFornecedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Consultas\Empresa\ConsFornecedor.Designer.cs">
+      <DependentUpon>ConsFornecedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Consultas\Empresa\ConsUsuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Consultas\Empresa\ConsUsuarios.Designer.cs">
+      <DependentUpon>ConsUsuarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Consultas\Estoque\ConsMarca.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Consultas\Estoque\ConsMarca.Designer.cs">
+      <DependentUpon>ConsMarca.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Consultas\Estoque\ConsProduto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Consultas\Estoque\ConsProduto.Designer.cs">
+      <DependentUpon>ConsProduto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Consultas\Estoque\ConsSGrupo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Consultas\Estoque\ConsSGrupo.Designer.cs">
+      <DependentUpon>ConsSGrupo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Consultas\Estoque\ConsUnidade.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Consultas\Estoque\ConsUnidade.Designer.cs">
+      <DependentUpon>ConsUnidade.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Inicio\Acesso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Inicio\Acesso.Designer.cs">
+      <DependentUpon>Acesso.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\Program.cs" />
+    <Compile Include="Formularios\Inicio\Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Inicio\Home.Designer.cs">
+      <DependentUpon>Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201903250310458_Migracao_24-03-2019.cs" />
+    <Compile Include="Migrations\201903250310458_Migracao_24-03-2019.Designer.cs">
+      <DependentUpon>201903250310458_Migracao_24-03-2019.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201903312043200_AlteracaoProdutos.cs" />
+    <Compile Include="Migrations\201903312043200_AlteracaoProdutos.Designer.cs">
+      <DependentUpon>201903312043200_AlteracaoProdutos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201904030354040_Alteracao_02042019_0.cs" />
+    <Compile Include="Migrations\201904030354040_Alteracao_02042019_0.Designer.cs">
+      <DependentUpon>201904030354040_Alteracao_02042019_0.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Paletas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Paletas.Designer.cs">
+      <DependentUpon>Paletas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TelaNova.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TelaNova.Designer.cs">
+      <DependentUpon>TelaNova.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Formularios\Cadastros\Empresa\CadEmpresa.resx">
+      <DependentUpon>CadEmpresa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Cadastros\Empresa\CadFornecedor.resx">
+      <DependentUpon>CadFornecedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Cadastros\Estoque\CadGrupo.resx">
+      <DependentUpon>CadGrupo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Cadastros\Estoque\CadMarca.resx">
+      <DependentUpon>CadMarca.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Cadastros\Estoque\CadSGrupo.resx">
+      <DependentUpon>CadSGrupo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Cadastros\Estoque\CadEstoque.resx">
+      <DependentUpon>CadEstoque.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Cadastros\Empresa\CadUsuarios.resx">
+      <DependentUpon>CadUsuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Cadastros\Empresa\CadIni.resx">
+      <DependentUpon>CadIni.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Cadastros\Estoque\CadProduto.resx">
+      <DependentUpon>CadProduto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Cadastros\Estoque\CadUnidade.resx">
+      <DependentUpon>CadUnidade.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Cadastros\Estoque\Precos.resx">
+      <DependentUpon>Precos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Cadastros\Estoque\TabelaPreco.resx">
+      <DependentUpon>TabelaPreco.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Consultas\Estoque\ConsEstoque.resx">
+      <DependentUpon>ConsEstoque.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Consultas\Empresa\ConsFornecedor.resx">
+      <DependentUpon>ConsFornecedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Consultas\Empresa\ConsUsuarios.resx">
+      <DependentUpon>ConsUsuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Consultas\Estoque\ConsGrupo.resx">
+      <DependentUpon>ConsGrupo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Consultas\Estoque\ConsMarca.resx">
+      <DependentUpon>ConsMarca.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Consultas\Estoque\ConsProduto.resx">
+      <DependentUpon>ConsProduto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Consultas\Estoque\ConsSGrupo.resx">
+      <DependentUpon>ConsSGrupo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Consultas\Estoque\ConsUnidade.resx">
+      <DependentUpon>ConsUnidade.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Inicio\Acesso.resx">
+      <DependentUpon>Acesso.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Inicio\Home.resx">
+      <DependentUpon>Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201903250310458_Migracao_24-03-2019.resx">
+      <DependentUpon>201903250310458_Migracao_24-03-2019.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201903312043200_AlteracaoProdutos.resx">
+      <DependentUpon>201903312043200_AlteracaoProdutos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201904030354040_Alteracao_02042019_0.resx">
+      <DependentUpon>201904030354040_Alteracao_02042019_0.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Paletas.resx">
+      <DependentUpon>Paletas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TelaNova.resx">
+      <DependentUpon>TelaNova.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\DataSources\Moda_System.Classes.Estoque.datasource" />
+    <None Include="Properties\DataSources\Moda_System.Classes.PrecosPro.datasource" />
+    <None Include="Properties\DataSources\Moda_System.Classes.SubGrupo.datasource" />
+    <None Include="Properties\DataSources\Moda_System.Classes.Unidade.datasource" />
+    <None Include="Properties\DataSources\Moda_System.Classes.Usuario.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Dados\" />
+    <Folder Include="Formularios\Movimento\" />
+    <Folder Include="Relatorios\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Chaves_48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Classes\Historico.txt" />
+    <Content Include="ModaSystem.ico" />
+    <None Include="Resources\DBModificar32x32.png" />
+    <None Include="Resources\DBPesquisar32x32.png" />
+    <None Include="Resources\dbConfirm32x32.png" />
+    <None Include="Resources\DBCadastrar32x32.png" />
+    <None Include="Resources\filter_32x32.png" />
+    <None Include="Resources\refresh2_32x32.png" />
+    <None Include="Resources\key_Icon_32x32.png" />
+    <None Include="Resources\Cadeado_32x32.png" />
+    <None Include="Resources\fechar_24x24.png" />
+    <None Include="Resources\check1_32x32.png" />
+    <None Include="Resources\Fechar1_32x32.png" />
+    <None Include="Resources\Close31.png" />
+    <None Include="Resources\Fechar3_48x48.png" />
+    <None Include="Resources\Fechar2_48x48.png" />
+    <None Include="Resources\Fechar1_48x48.png" />
+    <None Include="Resources\Minimize_30x30.png" />
+    <None Include="Resources\Minimize3_32x321.png" />
+    <None Include="Resources\Minimize3_32x32.png" />
+    <None Include="Resources\download_32x32.png" />
+    <None Include="Resources\Minimize_32x32.png" />
+    <None Include="Resources\Minimize2_32x32.png" />
+    <None Include="Resources\edit_32x32.png" />
+    <None Include="Resources\menos_32x32.png" />
+    <None Include="Resources\mais_32x32.png" />
+    <None Include="Resources\LogoModaSystem_Azul.png" />
+    <None Include="Resources\bt_Liga.png" />
+    <None Include="Resources\bt_DesLiga.png" />
+    <None Include="Resources\Close3.png" />
+    <None Include="Resources\Close2 32x32.png" />
+    <None Include="Resources\Close 32x32.png" />
+    <None Include="Resources\Cadeado2_32x32.png" />
+    <None Include="Resources\search_24.png" />
+    <None Include="Resources\bt_Modificar.png" />
+    <None Include="Resources\bt_Atualizar.png" />
+    <None Include="Resources\bt_Confirmar.png" />
+    <None Include="Resources\bt_Cadastrar2.png" />
+    <None Include="Resources\bt_Cadastrar3.png" />
+    <None Include="Resources\bt_Cadastrar1.png" />
+    <None Include="Resources\bt_Cadastrar.png" />
+    <None Include="Resources\bt_Cadastrar_32x32.png" />
+    <None Include="Resources\bt_Confirma_32x32.png" />
+    <None Include="Resources\User_24x24.png" />
+    <None Include="Resources\Conn2_24x24.png" />
+    <None Include="Resources\Keys-icon.png" />
+    <None Include="Resources\Login1_32x321.png" />
+    <None Include="Resources\Login1_32x32.png" />
+    <None Include="Resources\Logout_32x32.png" />
+    <None Include="Resources\eye_32x32.png" />
+    <None Include="Resources\eye2_24x24.png" />
+    <None Include="Resources\eye1_24x24.png" />
+    <None Include="Resources\eye_24x24.png" />
+    <None Include="Resources\LogoModaSystem.png" />
+    <None Include="Resources\OK2_32x32.png" />
+    <None Include="Resources\Close1_32x32.png" />
+    <None Include="Resources\OK1_32x32.png" />
+    <None Include="Resources\Close.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.6.1">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.6.1 %28x86 e x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>
+    if not exist "$(TargetDir)x86" md "$(TargetDir)x86"
+    xcopy /s /y "$(SolutionDir)packages\Microsoft.SqlServer.Compact.4.0.8876.1\NativeBinaries\x86\*.*" "$(TargetDir)x86"
+    if not exist "$(TargetDir)amd64" md "$(TargetDir)amd64"
+    xcopy /s /y "$(SolutionDir)packages\Microsoft.SqlServer.Compact.4.0.8876.1\NativeBinaries\amd64\*.*" "$(TargetDir)amd64"</PostBuildEvent>
+  </PropertyGroup>
+</Project>

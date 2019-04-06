@@ -1,0 +1,16 @@
+﻿22/01/2019 - Aécio Espinoza Miranda
+Inciando o Desenvolvimento da nova solução.
+Será Utilizado como Banco de Dados Padrão o Microsoft SQL Server Compact versão 4.5
+Criada a Classe Funções.
+	Primeira Parte.
+		Programar a Verificação da Existencia do Banco de Dados e a Criação do mesmo.
+
+CONTINUAR - Vendo Porque não está executando o script de tabelas corretamente.
+	Descoberto que o SQL Server Ce Não executa Lotes de Scripts tem que ser sempre um de cada vez.
+
+23/01/2019 
+Finalizada a execução dos scripts de criação do banco de Dados e tabelas e insert incial.
+Iniciada a nova tela de Cadastro padrão de Empresa e Usuário.
+Link Abaixo para baixa o ícone de Gravar padrão de todas as telas no novo modelo.
+http://www.iconarchive.com/show/origami-colored-pencil-icons-by-double-j-design/yellow-ok-icon.html
+
