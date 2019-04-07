@@ -74,6 +74,20 @@ namespace Moda_System.Formularios.Cadastros
             }
         }
 
+        private void tb_lucro_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && (e.KeyChar != ','))
+            {
+                e.Handled = true;
+                MessageBox.Show("este campo aceita somente numero e virgula");
+            }
+            if ((e.KeyChar == ',') && ((sender as TextBox).Text.IndexOf(',') > -1))
+            {
+                e.Handled = true;
+                MessageBox.Show("este campo aceita somente uma virgula");
+            }
+        }
+
         private void bt_Gravar_Click(object sender, EventArgs e)
         {
             //Grava os Dados

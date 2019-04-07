@@ -108,13 +108,6 @@
             this.preco = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.descprog = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.valAnt = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.precosProBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.bt_RemvPreco = new System.Windows.Forms.Button();
-            this.ck_TabPreco = new System.Windows.Forms.CheckBox();
-            this.bt_AddPreco = new System.Windows.Forms.Button();
-            this.tb_precoVenda = new System.Windows.Forms.TextBox();
-            this.pb_imgPro = new System.Windows.Forms.PictureBox();
-            this.bt_Gravar = new System.Windows.Forms.Button();
             this.produtoIdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.precoProIdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabPreIdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -124,6 +117,13 @@
             this.valAntProDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.produtoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabPrecoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.precosProBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.bt_RemvPreco = new System.Windows.Forms.Button();
+            this.ck_TabPreco = new System.Windows.Forms.CheckBox();
+            this.bt_AddPreco = new System.Windows.Forms.Button();
+            this.tb_precoVenda = new System.Windows.Forms.TextBox();
+            this.pb_imgPro = new System.Windows.Forms.PictureBox();
+            this.bt_Gravar = new System.Windows.Forms.Button();
             label6 = new System.Windows.Forms.Label();
             staProdLabel = new System.Windows.Forms.Label();
             codMarcaLabel = new System.Windows.Forms.Label();
@@ -924,7 +924,7 @@
             this.tb_cusMed.Name = "tb_cusMed";
             this.tb_cusMed.Size = new System.Drawing.Size(106, 25);
             this.tb_cusMed.TabIndex = 18;
-            this.tb_cusMed.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tb_cusMed__KeyPress);
+            this.tb_cusMed.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.infNum_KeyPress);
             this.tb_cusMed.Leave += new System.EventHandler(this.Campo_Money);
             // 
             // tb_cusRep
@@ -936,7 +936,7 @@
             this.tb_cusRep.Name = "tb_cusRep";
             this.tb_cusRep.Size = new System.Drawing.Size(106, 25);
             this.tb_cusRep.TabIndex = 17;
-            this.tb_cusRep.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tb_cusRep__KeyPress);
+            this.tb_cusRep.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.infNum_KeyPress);
             this.tb_cusRep.Leave += new System.EventHandler(this.Campo_Money);
             // 
             // label4
@@ -1060,90 +1060,6 @@
             this.valAnt.ReadOnly = true;
             this.valAnt.Width = 115;
             // 
-            // precosProBindingSource
-            // 
-            this.precosProBindingSource.DataSource = typeof(Moda_System.Classes.PrecosPro);
-            // 
-            // bt_RemvPreco
-            // 
-            this.bt_RemvPreco.FlatAppearance.BorderSize = 0;
-            this.bt_RemvPreco.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bt_RemvPreco.Image = global::Moda_System.Properties.Resources.menos_32x32;
-            this.bt_RemvPreco.Location = new System.Drawing.Point(362, 266);
-            this.bt_RemvPreco.Name = "bt_RemvPreco";
-            this.bt_RemvPreco.Size = new System.Drawing.Size(31, 32);
-            this.bt_RemvPreco.TabIndex = 23;
-            this.bt_RemvPreco.UseVisualStyleBackColor = true;
-            this.bt_RemvPreco.Click += new System.EventHandler(this.bt_RemvPreco_Click);
-            // 
-            // ck_TabPreco
-            // 
-            this.ck_TabPreco.AutoSize = true;
-            this.ck_TabPreco.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ck_TabPreco.ForeColor = System.Drawing.SystemColors.Control;
-            this.ck_TabPreco.Location = new System.Drawing.Point(20, 131);
-            this.ck_TabPreco.Name = "ck_TabPreco";
-            this.ck_TabPreco.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.ck_TabPreco.Size = new System.Drawing.Size(210, 25);
-            this.ck_TabPreco.TabIndex = 19;
-            this.ck_TabPreco.Text = "?Utilizar Tabelas de Preços";
-            this.ck_TabPreco.UseVisualStyleBackColor = true;
-            this.ck_TabPreco.CheckedChanged += new System.EventHandler(this.ck_TabPreco_CheckedChanged);
-            // 
-            // bt_AddPreco
-            // 
-            this.bt_AddPreco.FlatAppearance.BorderSize = 0;
-            this.bt_AddPreco.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bt_AddPreco.Image = global::Moda_System.Properties.Resources.mais_32x32;
-            this.bt_AddPreco.Location = new System.Drawing.Point(362, 169);
-            this.bt_AddPreco.Name = "bt_AddPreco";
-            this.bt_AddPreco.Size = new System.Drawing.Size(31, 32);
-            this.bt_AddPreco.TabIndex = 21;
-            this.bt_AddPreco.UseVisualStyleBackColor = true;
-            this.bt_AddPreco.Click += new System.EventHandler(this.bt_AddPreco_Click);
-            // 
-            // tb_precoVenda
-            // 
-            this.tb_precoVenda.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.tb_precoVenda.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.tb_precoVenda.Font = new System.Drawing.Font("Calibri", 11F, System.Drawing.FontStyle.Bold);
-            this.tb_precoVenda.Location = new System.Drawing.Point(270, 137);
-            this.tb_precoVenda.Name = "tb_precoVenda";
-            this.tb_precoVenda.Size = new System.Drawing.Size(123, 25);
-            this.tb_precoVenda.TabIndex = 20;
-            this.tb_precoVenda.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tb_precoVenda__KeyPress);
-            this.tb_precoVenda.Leave += new System.EventHandler(this.Campo_Money);
-            // 
-            // pb_imgPro
-            // 
-            this.pb_imgPro.BackColor = System.Drawing.Color.Transparent;
-            this.pb_imgPro.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pb_imgPro.Location = new System.Drawing.Point(448, 126);
-            this.pb_imgPro.Name = "pb_imgPro";
-            this.pb_imgPro.Size = new System.Drawing.Size(254, 263);
-            this.pb_imgPro.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pb_imgPro.TabIndex = 39;
-            this.pb_imgPro.TabStop = false;
-            // 
-            // bt_Gravar
-            // 
-            this.bt_Gravar.BackColor = System.Drawing.Color.Transparent;
-            this.bt_Gravar.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.bt_Gravar.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.bt_Gravar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bt_Gravar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_Gravar.ForeColor = System.Drawing.SystemColors.Control;
-            this.bt_Gravar.Image = global::Moda_System.Properties.Resources.check1_32x32;
-            this.bt_Gravar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.bt_Gravar.Location = new System.Drawing.Point(553, 410);
-            this.bt_Gravar.Name = "bt_Gravar";
-            this.bt_Gravar.Size = new System.Drawing.Size(157, 45);
-            this.bt_Gravar.TabIndex = 26;
-            this.bt_Gravar.Text = "Gravar Dados";
-            this.bt_Gravar.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.bt_Gravar.UseVisualStyleBackColor = false;
-            this.bt_Gravar.Click += new System.EventHandler(this.bt_Gravar_Click);
-            // 
             // produtoIdDataGridViewTextBoxColumn
             // 
             this.produtoIdDataGridViewTextBoxColumn.DataPropertyName = "ProdutoId";
@@ -1206,6 +1122,90 @@
             this.tabPrecoDataGridViewTextBoxColumn.HeaderText = "TabPreco";
             this.tabPrecoDataGridViewTextBoxColumn.Name = "tabPrecoDataGridViewTextBoxColumn";
             this.tabPrecoDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // precosProBindingSource
+            // 
+            this.precosProBindingSource.DataSource = typeof(Moda_System.Classes.PrecosPro);
+            // 
+            // bt_RemvPreco
+            // 
+            this.bt_RemvPreco.FlatAppearance.BorderSize = 0;
+            this.bt_RemvPreco.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_RemvPreco.Image = global::Moda_System.Properties.Resources.menos_32x32;
+            this.bt_RemvPreco.Location = new System.Drawing.Point(362, 266);
+            this.bt_RemvPreco.Name = "bt_RemvPreco";
+            this.bt_RemvPreco.Size = new System.Drawing.Size(31, 32);
+            this.bt_RemvPreco.TabIndex = 23;
+            this.bt_RemvPreco.UseVisualStyleBackColor = true;
+            this.bt_RemvPreco.Click += new System.EventHandler(this.bt_RemvPreco_Click);
+            // 
+            // ck_TabPreco
+            // 
+            this.ck_TabPreco.AutoSize = true;
+            this.ck_TabPreco.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ck_TabPreco.ForeColor = System.Drawing.SystemColors.Control;
+            this.ck_TabPreco.Location = new System.Drawing.Point(20, 131);
+            this.ck_TabPreco.Name = "ck_TabPreco";
+            this.ck_TabPreco.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.ck_TabPreco.Size = new System.Drawing.Size(210, 25);
+            this.ck_TabPreco.TabIndex = 19;
+            this.ck_TabPreco.Text = "?Utilizar Tabelas de Preços";
+            this.ck_TabPreco.UseVisualStyleBackColor = true;
+            this.ck_TabPreco.CheckedChanged += new System.EventHandler(this.ck_TabPreco_CheckedChanged);
+            // 
+            // bt_AddPreco
+            // 
+            this.bt_AddPreco.FlatAppearance.BorderSize = 0;
+            this.bt_AddPreco.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_AddPreco.Image = global::Moda_System.Properties.Resources.mais_32x32;
+            this.bt_AddPreco.Location = new System.Drawing.Point(362, 169);
+            this.bt_AddPreco.Name = "bt_AddPreco";
+            this.bt_AddPreco.Size = new System.Drawing.Size(31, 32);
+            this.bt_AddPreco.TabIndex = 21;
+            this.bt_AddPreco.UseVisualStyleBackColor = true;
+            this.bt_AddPreco.Click += new System.EventHandler(this.bt_AddPreco_Click);
+            // 
+            // tb_precoVenda
+            // 
+            this.tb_precoVenda.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.tb_precoVenda.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tb_precoVenda.Font = new System.Drawing.Font("Calibri", 11F, System.Drawing.FontStyle.Bold);
+            this.tb_precoVenda.Location = new System.Drawing.Point(270, 137);
+            this.tb_precoVenda.Name = "tb_precoVenda";
+            this.tb_precoVenda.Size = new System.Drawing.Size(123, 25);
+            this.tb_precoVenda.TabIndex = 20;
+            this.tb_precoVenda.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.infNum_KeyPress);
+            this.tb_precoVenda.Leave += new System.EventHandler(this.Campo_Money);
+            // 
+            // pb_imgPro
+            // 
+            this.pb_imgPro.BackColor = System.Drawing.Color.Transparent;
+            this.pb_imgPro.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pb_imgPro.Location = new System.Drawing.Point(448, 126);
+            this.pb_imgPro.Name = "pb_imgPro";
+            this.pb_imgPro.Size = new System.Drawing.Size(254, 263);
+            this.pb_imgPro.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pb_imgPro.TabIndex = 39;
+            this.pb_imgPro.TabStop = false;
+            // 
+            // bt_Gravar
+            // 
+            this.bt_Gravar.BackColor = System.Drawing.Color.Transparent;
+            this.bt_Gravar.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.bt_Gravar.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.bt_Gravar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_Gravar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_Gravar.ForeColor = System.Drawing.SystemColors.Control;
+            this.bt_Gravar.Image = global::Moda_System.Properties.Resources.check1_32x32;
+            this.bt_Gravar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.bt_Gravar.Location = new System.Drawing.Point(553, 410);
+            this.bt_Gravar.Name = "bt_Gravar";
+            this.bt_Gravar.Size = new System.Drawing.Size(157, 45);
+            this.bt_Gravar.TabIndex = 26;
+            this.bt_Gravar.Text = "Gravar Dados";
+            this.bt_Gravar.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.bt_Gravar.UseVisualStyleBackColor = false;
+            this.bt_Gravar.Click += new System.EventHandler(this.bt_Gravar_Click);
             // 
             // CadProduto
             // 

@@ -263,27 +263,20 @@ namespace Moda_System.Formularios.Cadastros
         #endregion
 
         #region ************** Tratando Valores Informados nos campos ****************
-        private void tb_cusRep__KeyPress(object sender, KeyPressEventArgs e)
+        private void infNum_KeyPress(object sender, KeyPressEventArgs e)
         {
-            //Aceita apenas numeros no textbox
-            if (!char.IsDigit(e.KeyChar) && e.KeyChar != ',')
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && (e.KeyChar != ','))
+            {
                 e.Handled = true;
-        }
-
-        private void tb_cusMed__KeyPress(object sender, KeyPressEventArgs e)
-        {
-            //Aceita apenas numeros no textbox
-            if (!char.IsDigit(e.KeyChar) && e.KeyChar != ',')
+                MessageBox.Show("este campo aceita somente numero e virgula");
+            }
+            if ((e.KeyChar == ',') && ((sender as TextBox).Text.IndexOf(',') > -1))
+            {
                 e.Handled = true;
+                MessageBox.Show("este campo aceita somente uma virgula");
+            }
         }
-
-        private void tb_precoVenda__KeyPress(object sender, KeyPressEventArgs e)
-        {
-            //Aceita apenas numeros no textbox
-            if (!char.IsDigit(e.KeyChar) && e.KeyChar != ',')
-                e.Handled = true;
-        }
-
+        
         private void Campo_Money(object sender, EventArgs e)
         {
             decimal cusmed = 0;
@@ -472,7 +465,7 @@ namespace Moda_System.Formularios.Cadastros
         {
             if (CodPro > 0)
             {
-                Precos cadPreco = new Precos(CodPro, tb_descricao.Text, 0);                
+                Precos cadPreco = new Precos(CodPro, tb_descricao.Text, tb_cusRep.Text, 0);
                 cadPreco.ShowDialog();
                 GetPrecos();
             }
@@ -493,11 +486,12 @@ namespace Moda_System.Formularios.Cadastros
                 ln = grid_Precos.CurrentRow.Index;
                 codTab = Convert.ToInt32(grid_Precos.Rows[ln].Cells[0].Value.ToString());
 
-                Precos cadPreco = new Precos(CodPro, tb_descricao.Text, codTab);
+                Precos cadPreco = new Precos(CodPro, tb_descricao.Text, tb_cusRep.Text, codTab);
                 cadPreco.ShowDialog();
 
                 GetPrecos();
             }
+
         }
 
         private void bt_RemvPreco_Click(object sender, EventArgs e)

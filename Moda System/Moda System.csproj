@@ -175,6 +175,12 @@
     <Compile Include="Formularios\Cadastros\Empresa\CadFornecedor.Designer.cs">
       <DependentUpon>CadFornecedor.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\Cadastros\Empresa\CadVendedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Cadastros\Empresa\CadVendedor.Designer.cs">
+      <DependentUpon>CadVendedor.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\Cadastros\Estoque\CadGrupo.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -234,6 +240,12 @@
     </Compile>
     <Compile Include="Formularios\Cadastros\Estoque\TabelaPreco.Designer.cs">
       <DependentUpon>TabelaPreco.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Consultas\Empresa\ConsVendedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Consultas\Empresa\ConsVendedor.Designer.cs">
+      <DependentUpon>ConsVendedor.cs</DependentUpon>
     </Compile>
     <Compile Include="Formularios\Consultas\Estoque\ConsGrupo.cs">
       <SubType>Form</SubType>
@@ -328,6 +340,9 @@
     <EmbeddedResource Include="Formularios\Cadastros\Empresa\CadFornecedor.resx">
       <DependentUpon>CadFornecedor.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Cadastros\Empresa\CadVendedor.resx">
+      <DependentUpon>CadVendedor.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Cadastros\Estoque\CadGrupo.resx">
       <DependentUpon>CadGrupo.cs</DependentUpon>
     </EmbeddedResource>
@@ -357,6 +372,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Cadastros\Estoque\TabelaPreco.resx">
       <DependentUpon>TabelaPreco.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Consultas\Empresa\ConsVendedor.resx">
+      <DependentUpon>ConsVendedor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Consultas\Estoque\ConsEstoque.resx">
       <DependentUpon>ConsEstoque.cs</DependentUpon>

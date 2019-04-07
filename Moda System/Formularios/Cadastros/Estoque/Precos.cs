@@ -15,17 +15,25 @@ namespace Moda_System.Formularios.Cadastros
         private int CodPre = 0; 
         private int CodPro = 0;
         private string Produto = "";
+        private string CustoRep = "";
+
+        private decimal custopro = 0;
         private decimal valantpro = 0;
+        private decimal valorpro = 0;
+        private decimal descmax = 0;
+        private decimal margem = 0;
 
         PrecosProRepositorio cadPre;
         TabPrecoRepositorio cadTab;
 
-        public Precos(int _codPro, string _desPro, int _codPre)
+        public Precos(int _codPro, string _desPro, string _cusrep, int _codPre)
         {
-            InitializeComponent();
             this.CodPro = _codPro;
             this.Produto = _desPro;
             this.CodPre = _codPre;
+            this.CustoRep = _cusrep;
+            
+            InitializeComponent();
         }
 
         private void Precos_Load(object sender, EventArgs e)
@@ -39,6 +47,15 @@ namespace Moda_System.Formularios.Cadastros
             }
 
             tb_despro.Text = Produto;
+
+            if (!string.IsNullOrEmpty(CustoRep))
+            {
+                if (CustoRep[0] == 'R')
+                    CustoRep = CustoRep.Substring(2);
+
+                custopro = Convert.ToDecimal(CustoRep);
+                tb_cuspro.Text = custopro.ToString("C");
+            }
         }
 
         private void Consulta()
@@ -69,16 +86,19 @@ namespace Moda_System.Formularios.Cadastros
                         if (tb_valPro.Text[0] == 'R')
                             tb_valPro.Text = tb_valPro.Text.Substring(2);
 
-                        tb_valPro.Text = Convert.ToDecimal(tb_valPro.Text).ToString("C");
+                        valorpro = Convert.ToDecimal(tb_valPro.Text);
+                        tb_valPro.Text = valorpro.ToString("C");
                     }
 
-                    if (tb_descProg.Text != "")
+                    if (tb_descProg.Text != "") //Desconto máximo
                     {
                         if (tb_descProg.Text[0] == 'R')
                             tb_descProg.Text = tb_descProg.Text.Substring(2);
 
-                        tb_descProg.Text = Convert.ToDecimal(tb_descProg.Text).ToString("C");
+                        descmax = Convert.ToDecimal(tb_descProg.Text);
+                        tb_descProg.Text = descmax.ToString("C");
                     }
+                                        
                 }
                 else
                 {
@@ -203,7 +223,8 @@ namespace Moda_System.Formularios.Cadastros
                 if (tb_valPro.Text[0] == 'R')
                     tb_valPro.Text = tb_valPro.Text.Substring(2);
 
-                tb_valPro.Text = Convert.ToDecimal(tb_valPro.Text).ToString("C");
+                valorpro = Convert.ToDecimal(tb_valPro.Text);
+                tb_valPro.Text = valorpro.ToString("C");
             }
 
             if (tb_descProg.Text != "")
@@ -211,8 +232,73 @@ namespace Moda_System.Formularios.Cadastros
                 if (tb_descProg.Text[0] == 'R')
                     tb_descProg.Text = tb_descProg.Text.Substring(2);
 
-                tb_descProg.Text = Convert.ToDecimal(tb_descProg.Text).ToString("C");
+                descmax = Convert.ToDecimal(tb_descProg.Text);
+                tb_descProg.Text = descmax.ToString("C");
             }
+        }
+
+        private void tb_valPro_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && (e.KeyChar != ','))
+            {
+                e.Handled = true;
+                MessageBox.Show("este campo aceita somente numero e virgula");
+            }
+            if ((e.KeyChar == ',') && ((sender as TextBox).Text.IndexOf(',') > -1))
+            {
+                e.Handled = true;
+                MessageBox.Show("este campo aceita somente uma virgula");
+            }
+        }
+
+        private void tb_descProg_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && (e.KeyChar != ','))
+            {
+                e.Handled = true;
+                MessageBox.Show("este campo aceita somente numero e virgula");
+            }
+            if ((e.KeyChar == ',') && ((sender as TextBox).Text.IndexOf(',') > -1))
+            {
+                e.Handled = true;
+                MessageBox.Show("este campo aceita somente uma virgula");
+            }
+        }
+
+        private void tb_margem_Leave(object sender, EventArgs e)
+        {
+            if (tb_margem.Text != "")
+            {
+                if (tb_margem.Text[0] == 'R')
+                    tb_margem.Text = tb_margem.Text.Substring(2);
+
+                margem = Convert.ToDecimal(tb_margem.Text);
+                tb_margem.Text = margem.ToString("C");
+
+                CalculaValor(0);
+            }
+        }
+
+        private void CalculaValor(int tipo)
+        {
+            //Valor = custo * (margem / 100)
+
+            if (tipo == 0) //Alterou a Margem calcula o valor
+            {
+                //Custo dividido por (cem - margem) * cem
+                if(margem < 100)
+                    valorpro = custopro / (100 - margem) * 100;
+
+                tb_valPro.Leave -= tb_valPro_Leave;
+                tb_valPro.Text = valorpro.ToString("C");
+                tb_valPro.Leave += tb_valPro_Leave;
+            }
+
+            if(tipo == 1)
+            {
+                
+            }
+
         }
 
         #region ************** Tratamento da Tabela de Preços ******************
@@ -277,8 +363,10 @@ namespace Moda_System.Formularios.Cadastros
 
         private void TabPrecos(int mode)
         {
+            this.Hide();
             TabelaPreco tab = new TabelaPreco(mode);
             tab.ShowDialog();
+            this.Show();
         }
         
         #endregion

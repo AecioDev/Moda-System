@@ -183,7 +183,9 @@ namespace Moda_System.Formularios.Inicio
 
         private void bt_cadVen_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Olá Teste.");
+            Pnl_DadosGerais.Visible = false;
+            ConsVendedor vend = new ConsVendedor();
+            vend.ShowDialog();
         }
         #endregion
 

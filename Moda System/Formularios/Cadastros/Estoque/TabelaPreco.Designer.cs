@@ -53,7 +53,7 @@
             this.bt_Gravar.ForeColor = System.Drawing.SystemColors.Control;
             this.bt_Gravar.Image = global::Moda_System.Properties.Resources.check1_32x32;
             this.bt_Gravar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.bt_Gravar.Location = new System.Drawing.Point(248, 147);
+            this.bt_Gravar.Location = new System.Drawing.Point(248, 151);
             this.bt_Gravar.Name = "bt_Gravar";
             this.bt_Gravar.Size = new System.Drawing.Size(160, 45);
             this.bt_Gravar.TabIndex = 435;
@@ -71,7 +71,7 @@
             "Se Maior",
             "Se Menor",
             "Não Calcular"});
-            this.cb_tipPreco.Location = new System.Drawing.Point(190, 97);
+            this.cb_tipPreco.Location = new System.Drawing.Point(190, 101);
             this.cb_tipPreco.Name = "cb_tipPreco";
             this.cb_tipPreco.Size = new System.Drawing.Size(194, 28);
             this.cb_tipPreco.TabIndex = 436;
@@ -82,30 +82,31 @@
             this.tb_lucro.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tb_lucro.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.tb_lucro.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold);
-            this.tb_lucro.Location = new System.Drawing.Point(83, 137);
+            this.tb_lucro.Location = new System.Drawing.Point(83, 141);
             this.tb_lucro.Name = "tb_lucro";
             this.tb_lucro.Size = new System.Drawing.Size(85, 23);
             this.tb_lucro.TabIndex = 431;
+            this.tb_lucro.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tb_lucro_KeyPress);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.Control;
-            this.label3.Location = new System.Drawing.Point(171, 142);
+            this.label3.Location = new System.Drawing.Point(171, 146);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(16, 13);
+            this.label3.Size = new System.Drawing.Size(17, 15);
             this.label3.TabIndex = 433;
             this.label3.Text = "%";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.Control;
-            this.label2.Location = new System.Drawing.Point(25, 142);
+            this.label2.Location = new System.Drawing.Point(25, 146);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(51, 13);
+            this.label2.Size = new System.Drawing.Size(52, 15);
             this.label2.TabIndex = 434;
             this.label2.Text = "Margem";
             // 
@@ -123,22 +124,22 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
+            this.label5.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.SystemColors.Control;
-            this.label5.Location = new System.Drawing.Point(25, 105);
+            this.label5.Location = new System.Drawing.Point(25, 109);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(156, 13);
+            this.label5.Size = new System.Drawing.Size(142, 15);
             this.label5.TabIndex = 435;
             this.label5.Text = "Calcular Preço na Entrada";
             // 
             // lb_desc
             // 
             this.lb_desc.AutoSize = true;
-            this.lb_desc.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
+            this.lb_desc.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_desc.ForeColor = System.Drawing.SystemColors.Control;
             this.lb_desc.Location = new System.Drawing.Point(25, 72);
             this.lb_desc.Name = "lb_desc";
-            this.lb_desc.Size = new System.Drawing.Size(46, 13);
+            this.lb_desc.Size = new System.Drawing.Size(41, 15);
             this.lb_desc.TabIndex = 429;
             this.lb_desc.Text = "Tabela";
             // 
@@ -179,13 +180,14 @@
             this.bt_Fechar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.bt_Fechar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.bt_Fechar.UseVisualStyleBackColor = false;
+            this.bt_Fechar.Click += new System.EventHandler(this.bt_Fechar_Click);
             // 
             // TabelaPreco
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(54)))), ((int)(((byte)(54)))));
-            this.ClientSize = new System.Drawing.Size(416, 203);
+            this.ClientSize = new System.Drawing.Size(416, 210);
             this.Controls.Add(this.cb_tipPreco);
             this.Controls.Add(this.bt_Gravar);
             this.Controls.Add(this.tb_lucro);

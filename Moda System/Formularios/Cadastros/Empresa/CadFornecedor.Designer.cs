@@ -240,6 +240,7 @@
             this.tb_CPF.TabIndex = 1;
             this.tb_CPF.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.info.SetToolTip(this.tb_CPF, "Sem TRAÇOS e sem PONTOS");
+            this.tb_CPF.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tb_CPF_KeyPress);
             // 
             // label2
             // 
@@ -286,6 +287,7 @@
             this.tb_CNPJ.TabIndex = 2;
             this.tb_CNPJ.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.info.SetToolTip(this.tb_CNPJ, "Sem TRAÇOS e sem PONTOS");
+            this.tb_CNPJ.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tb_CNPJ_KeyPress);
             // 
             // bt_Gravar
             // 

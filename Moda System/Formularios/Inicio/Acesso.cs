@@ -237,7 +237,7 @@ namespace Moda_System.Formularios.Inicio
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show("Problemas ao consultar o banco de dados!!!\n" + "\nDetalhes abaixo:" + ex.Message, msgCab, MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                    MessageBox.Show("Problemas ao consultar o banco de dados!!!\n" + "\nDetalhes abaixo:" + ex.Message, msgCab);
                     Application.Exit();                    
                 }
             }
