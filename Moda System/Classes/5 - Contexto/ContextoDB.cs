@@ -48,6 +48,7 @@ namespace Moda_System.Classes
             modelBuilder.Configurations.Add(new UnidadeConf());
             modelBuilder.Configurations.Add(new UsuarioConf());
             modelBuilder.Configurations.Add(new VendedorConf());
+            modelBuilder.Configurations.Add(new VeiculoConf());
         }
 
         public DbSet<BarrasPro> Barras { get; set; }
@@ -65,5 +66,6 @@ namespace Moda_System.Classes
         public DbSet<Unidade> Unidade { get; set; }
         public DbSet<Usuario> Usuario { get; set; }
         public DbSet<Vendedor> Vendedor { get; set; }
+        public DbSet<Veiculo> Veiculo { get; set; }
     }
 }
