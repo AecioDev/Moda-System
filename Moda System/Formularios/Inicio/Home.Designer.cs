@@ -271,6 +271,7 @@
             this.bt_CadVeic.Text = "Veículos";
             this.bt_CadVeic.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.bt_CadVeic.UseVisualStyleBackColor = false;
+            this.bt_CadVeic.Click += new System.EventHandler(this.bt_CadVeic_Click);
             // 
             // bt_Clientes
             // 

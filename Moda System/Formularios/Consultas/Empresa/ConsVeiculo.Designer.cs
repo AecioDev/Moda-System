@@ -1,4 +1,4 @@
-﻿namespace Moda_System.Formularios.Consultas.Empresa
+﻿namespace Moda_System.Formularios.Consultas
 {
     partial class ConsVeiculo
     {
@@ -28,12 +28,18 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ConsVeiculo));
             this.bt_Atualizar = new System.Windows.Forms.Button();
             this.bt_Cadastrar = new System.Windows.Forms.Button();
             this.bt_Modificar = new System.Windows.Forms.Button();
             this.cb_Motoristas = new System.Windows.Forms.ComboBox();
             this.bt_Confirmar = new System.Windows.Forms.Button();
             this.grd_Dados = new System.Windows.Forms.DataGridView();
+            this.codVeic = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.placaVeic = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.descVeic = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nomMoto = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.descLocal = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tb_descVeic = new System.Windows.Forms.TextBox();
             this.tb_LPlaca = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -44,11 +50,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.tb_NPlaca = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.codVeic = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.placaVeic = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.descVeic = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nomMoto = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.descLocal = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.grd_Dados)).BeginInit();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -69,6 +70,7 @@
             this.bt_Atualizar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.bt_Atualizar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.bt_Atualizar.UseVisualStyleBackColor = false;
+            this.bt_Atualizar.Click += new System.EventHandler(this.bt_Atualizar_Click);
             // 
             // bt_Cadastrar
             // 
@@ -85,6 +87,7 @@
             this.bt_Cadastrar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.bt_Cadastrar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.bt_Cadastrar.UseVisualStyleBackColor = false;
+            this.bt_Cadastrar.Click += new System.EventHandler(this.bt_Cadastrar_Click);
             // 
             // bt_Modificar
             // 
@@ -101,6 +104,7 @@
             this.bt_Modificar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.bt_Modificar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.bt_Modificar.UseVisualStyleBackColor = false;
+            this.bt_Modificar.Click += new System.EventHandler(this.bt_Modificar_Click);
             // 
             // cb_Motoristas
             // 
@@ -134,6 +138,7 @@
             this.bt_Confirmar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.bt_Confirmar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.bt_Confirmar.UseVisualStyleBackColor = false;
+            this.bt_Confirmar.Click += new System.EventHandler(this.bt_Confirmar_Click);
             // 
             // grd_Dados
             // 
@@ -155,6 +160,41 @@
             this.grd_Dados.Size = new System.Drawing.Size(453, 137);
             this.grd_Dados.TabIndex = 209;
             // 
+            // codVeic
+            // 
+            this.codVeic.HeaderText = "#";
+            this.codVeic.Name = "codVeic";
+            this.codVeic.ReadOnly = true;
+            this.codVeic.Width = 40;
+            // 
+            // placaVeic
+            // 
+            this.placaVeic.HeaderText = "Placa";
+            this.placaVeic.Name = "placaVeic";
+            this.placaVeic.ReadOnly = true;
+            this.placaVeic.Width = 80;
+            // 
+            // descVeic
+            // 
+            this.descVeic.HeaderText = "Veículo";
+            this.descVeic.Name = "descVeic";
+            this.descVeic.ReadOnly = true;
+            this.descVeic.Width = 180;
+            // 
+            // nomMoto
+            // 
+            this.nomMoto.HeaderText = "Motorista";
+            this.nomMoto.Name = "nomMoto";
+            this.nomMoto.ReadOnly = true;
+            this.nomMoto.Width = 180;
+            // 
+            // descLocal
+            // 
+            this.descLocal.HeaderText = "Local";
+            this.descLocal.Name = "descLocal";
+            this.descLocal.ReadOnly = true;
+            this.descLocal.Width = 180;
+            // 
             // tb_descVeic
             // 
             this.tb_descVeic.BackColor = System.Drawing.SystemColors.Control;
@@ -163,6 +203,7 @@
             this.tb_descVeic.Name = "tb_descVeic";
             this.tb_descVeic.Size = new System.Drawing.Size(398, 22);
             this.tb_descVeic.TabIndex = 207;
+            this.tb_descVeic.TextChanged += new System.EventHandler(this.tb_nome_TextChanged);
             // 
             // tb_LPlaca
             // 
@@ -223,6 +264,7 @@
             this.bt_Fechar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.bt_Fechar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.bt_Fechar.UseVisualStyleBackColor = false;
+            this.bt_Fechar.Click += new System.EventHandler(this.bt_Fechar_Click);
             // 
             // label4
             // 
@@ -263,41 +305,6 @@
             this.label5.TabIndex = 216;
             this.label5.Text = "-";
             // 
-            // codVeic
-            // 
-            this.codVeic.HeaderText = "#";
-            this.codVeic.Name = "codVeic";
-            this.codVeic.ReadOnly = true;
-            this.codVeic.Width = 40;
-            // 
-            // placaVeic
-            // 
-            this.placaVeic.HeaderText = "Placa";
-            this.placaVeic.Name = "placaVeic";
-            this.placaVeic.ReadOnly = true;
-            this.placaVeic.Width = 80;
-            // 
-            // descVeic
-            // 
-            this.descVeic.HeaderText = "Veículo";
-            this.descVeic.Name = "descVeic";
-            this.descVeic.ReadOnly = true;
-            this.descVeic.Width = 180;
-            // 
-            // nomMoto
-            // 
-            this.nomMoto.HeaderText = "Motorista";
-            this.nomMoto.Name = "nomMoto";
-            this.nomMoto.ReadOnly = true;
-            this.nomMoto.Width = 180;
-            // 
-            // descLocal
-            // 
-            this.descLocal.HeaderText = "Local";
-            this.descLocal.Name = "descLocal";
-            this.descLocal.ReadOnly = true;
-            this.descLocal.Width = 180;
-            // 
             // ConsVeiculo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -318,9 +325,11 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.panel2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "ConsVeiculo";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ConsVeiculo";
+            this.Load += new System.EventHandler(this.ConsVeiculo_Load);
             ((System.ComponentModel.ISupportInitialize)(this.grd_Dados)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();

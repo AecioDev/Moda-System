@@ -6,21 +6,20 @@ namespace Moda_System.Classes
     public class VeiculoRepositorio : RepositorioBase<Veiculo>, IVeiculoRepositorio
     {
 
-        public List<Veiculo> ConsVeiculo(string status, string doc, string nome)
+        public List<Veiculo> ConsVeiculo(string placa, int codMoto, string descVei)
         {
             var Veic = Db.Veiculo.AsQueryable();
 
-            //if (!string.IsNullOrEmpty(status))
-            //    Veic = Veic.Where(v => v.StatusVend == status);
+            if (!string.IsNullOrEmpty(placa))
+                Veic = Veic.Where(v => v.PlacaVeiculo == placa);
 
-            //if (!string.IsNullOrEmpty(doc))
-            //    Veic = Veic.Where(f => f.CnpjVend.Contains(doc) || f.CpfVend.Contains(doc));
+            if (!string.IsNullOrEmpty(descVei))
+                Veic = Veic.Where(v => v.DescVeiculo.Contains(descVei));
 
-            //if (!string.IsNullOrEmpty(nome))
-            //    Veic = Veic.Where(f => f.NomeVendedor.Contains(nome));
+            if (codMoto > 0)
+                Veic = Veic.Where(v => v.CodMotorista == codMoto);
 
             return Veic.ToList();
         }
-
     }
 }

@@ -18,9 +18,8 @@ namespace Moda_System.Formularios.Consultas
         private int CodMar = 0;
         private CadProduto cadProduto;
 
-        public ConsMarca(int _codmar)
+        public ConsMarca()
         {
-            CodMar = _codmar;
             InitializeComponent();
         }
 

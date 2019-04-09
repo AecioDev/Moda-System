@@ -179,6 +179,12 @@
     <Compile Include="Formularios\Cadastros\Empresa\CadFornecedor.Designer.cs">
       <DependentUpon>CadFornecedor.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\Cadastros\Empresa\CadVeiculo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Cadastros\Empresa\CadVeiculo.Designer.cs">
+      <DependentUpon>CadVeiculo.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\Cadastros\Empresa\CadVendedor.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -349,6 +355,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Cadastros\Empresa\CadFornecedor.resx">
       <DependentUpon>CadFornecedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Cadastros\Empresa\CadVeiculo.resx">
+      <DependentUpon>CadVeiculo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Cadastros\Empresa\CadVendedor.resx">
       <DependentUpon>CadVendedor.cs</DependentUpon>

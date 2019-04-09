@@ -187,6 +187,14 @@ namespace Moda_System.Formularios.Inicio
             ConsVendedor vend = new ConsVendedor();
             vend.ShowDialog();
         }
+
+        private void bt_CadVeic_Click(object sender, EventArgs e)
+        {
+            Pnl_DadosGerais.Visible = false;
+            ConsVeiculo veic = new ConsVeiculo();
+            veic.ShowDialog();
+        }
+
         #endregion
 
         #region Botões Estoque
@@ -195,7 +203,7 @@ namespace Moda_System.Formularios.Inicio
             Pnl_Estoque.Visible = false;
             if (PerfUser == "A")
             {
-                ConsEstoque ConsEst = new ConsEstoque(1);
+                ConsEstoque ConsEst = new ConsEstoque();
                 ConsEst.ShowDialog();
             }
             else
@@ -211,8 +219,8 @@ namespace Moda_System.Formularios.Inicio
             ConsProduto ConsPro = new ConsProduto();
             ConsPro.ShowDialog();
         }
+
         #endregion
 
-        
     }
 }

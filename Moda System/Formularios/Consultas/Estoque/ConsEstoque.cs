@@ -10,19 +10,18 @@ namespace Moda_System.Formularios.Consultas
     {        
         private int Tela = 0;
         private int CodEst = 0;
-        private CadProduto cadProduto;
+        private CadVeiculo cadVeiculo;
 
-        public ConsEstoque(int _codest)
+        public ConsEstoque()
         {
             InitializeComponent();
-            this.CodEst = _codest;
         }
-
-        public ConsEstoque(CadProduto cadProduto)
+        
+        public ConsEstoque(CadVeiculo cadVeiculo)
         {
-            InitializeComponent();
-            this.cadProduto = cadProduto;
             this.Tela = 1;
+            this.cadVeiculo = cadVeiculo;
+            InitializeComponent();
         }
 
         private void ConsEstoque_Load(object sender, EventArgs e)
@@ -69,8 +68,8 @@ namespace Moda_System.Formularios.Consultas
                 switch (Tela)
                 {
                     case 1: //Estoque
-                        //cadProduto.CodMarca = Convert.ToInt32(cod);
-                        //cadProduto.tb_Marca.Text = desc;
+                        cadVeiculo.CodEstoque = Convert.ToInt32(cod);
+                        cadVeiculo.tb_Estoque.Text = desc;
                         break;
                 }
 
