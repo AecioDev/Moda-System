@@ -222,5 +222,15 @@ namespace Moda_System.Formularios.Inicio
 
         #endregion
 
+        #region Botões Movimento
+        private void bt_EntMercadoria_Click(object sender, EventArgs e)
+        {
+            pnl_Movimentacao.Visible = false;
+            CadEntradas nfEnt = new CadEntradas();
+            nfEnt.ShowDialog();
+        }
+
+        #endregion
+
     }
 }

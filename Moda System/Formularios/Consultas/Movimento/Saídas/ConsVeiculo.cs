@@ -63,7 +63,6 @@ namespace Moda_System.Formularios.Consultas
         }
         #endregion
 
-
         private void bt_Confirmar_Click(object sender, EventArgs e)
         {
 

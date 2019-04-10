@@ -35,16 +35,16 @@
             this.tb_fantEmp = new System.Windows.Forms.TextBox();
             this.lb_BoaVinda = new System.Windows.Forms.Label();
             this.pnl_Movimentacao = new System.Windows.Forms.FlowLayoutPanel();
-            this.bt_ConfNF = new System.Windows.Forms.Button();
             this.bt_EntMercadoria = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
             this.button10 = new System.Windows.Forms.Button();
-            this.Pnl_DadosGerais = new System.Windows.Forms.FlowLayoutPanel();
-            this.bt_cadEmp = new System.Windows.Forms.Button();
+            this.bt_Clientes = new System.Windows.Forms.Button();
             this.bt_CadFor = new System.Windows.Forms.Button();
             this.bt_cadVen = new System.Windows.Forms.Button();
+            this.bt_ConfNF = new System.Windows.Forms.Button();
+            this.Pnl_DadosGerais = new System.Windows.Forms.FlowLayoutPanel();
+            this.bt_cadEmp = new System.Windows.Forms.Button();
             this.bt_CadVeic = new System.Windows.Forms.Button();
-            this.bt_Clientes = new System.Windows.Forms.Button();
             this.Pnl_Estoque = new System.Windows.Forms.FlowLayoutPanel();
             this.bt_cadLocal = new System.Windows.Forms.Button();
             this.bt_cadPro = new System.Windows.Forms.Button();
@@ -58,9 +58,9 @@
             this.bt_Menu02 = new System.Windows.Forms.Button();
             this.Relogio = new System.Windows.Forms.Timer(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
+            this.tb_Versao = new System.Windows.Forms.TextBox();
             this.bt_Usuarios = new System.Windows.Forms.Button();
             this.bt_Conexao = new System.Windows.Forms.Button();
-            this.tb_Versao = new System.Windows.Forms.TextBox();
             this.panel2.SuspendLayout();
             this.pnl_Movimentacao.SuspendLayout();
             this.Pnl_DadosGerais.SuspendLayout();
@@ -117,31 +117,17 @@
             // 
             // pnl_Movimentacao
             // 
-            this.pnl_Movimentacao.Controls.Add(this.bt_ConfNF);
             this.pnl_Movimentacao.Controls.Add(this.bt_EntMercadoria);
             this.pnl_Movimentacao.Controls.Add(this.button8);
             this.pnl_Movimentacao.Controls.Add(this.button10);
+            this.pnl_Movimentacao.Controls.Add(this.bt_Clientes);
+            this.pnl_Movimentacao.Controls.Add(this.bt_CadFor);
+            this.pnl_Movimentacao.Controls.Add(this.bt_cadVen);
             this.pnl_Movimentacao.Location = new System.Drawing.Point(277, 140);
             this.pnl_Movimentacao.Name = "pnl_Movimentacao";
             this.pnl_Movimentacao.Size = new System.Drawing.Size(258, 201);
             this.pnl_Movimentacao.TabIndex = 7;
             this.pnl_Movimentacao.Visible = false;
-            // 
-            // bt_ConfNF
-            // 
-            this.bt_ConfNF.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(166)))), ((int)(((byte)(166)))));
-            this.bt_ConfNF.FlatAppearance.BorderSize = 0;
-            this.bt_ConfNF.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bt_ConfNF.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_ConfNF.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.bt_ConfNF.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.bt_ConfNF.Location = new System.Drawing.Point(3, 3);
-            this.bt_ConfNF.Name = "bt_ConfNF";
-            this.bt_ConfNF.Size = new System.Drawing.Size(122, 40);
-            this.bt_ConfNF.TabIndex = 52;
-            this.bt_ConfNF.Text = "Configuração de Notas";
-            this.bt_ConfNF.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.bt_ConfNF.UseVisualStyleBackColor = false;
             // 
             // bt_EntMercadoria
             // 
@@ -151,13 +137,14 @@
             this.bt_EntMercadoria.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_EntMercadoria.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.bt_EntMercadoria.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.bt_EntMercadoria.Location = new System.Drawing.Point(131, 3);
+            this.bt_EntMercadoria.Location = new System.Drawing.Point(3, 3);
             this.bt_EntMercadoria.Name = "bt_EntMercadoria";
             this.bt_EntMercadoria.Size = new System.Drawing.Size(122, 40);
             this.bt_EntMercadoria.TabIndex = 52;
             this.bt_EntMercadoria.Text = "Entradas de  Mercadorias";
             this.bt_EntMercadoria.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.bt_EntMercadoria.UseVisualStyleBackColor = false;
+            this.bt_EntMercadoria.Click += new System.EventHandler(this.bt_EntMercadoria_Click);
             // 
             // button8
             // 
@@ -167,7 +154,7 @@
             this.button8.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button8.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.button8.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button8.Location = new System.Drawing.Point(3, 49);
+            this.button8.Location = new System.Drawing.Point(131, 3);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(122, 40);
             this.button8.TabIndex = 52;
@@ -183,7 +170,7 @@
             this.button10.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button10.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.button10.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button10.Location = new System.Drawing.Point(131, 49);
+            this.button10.Location = new System.Drawing.Point(3, 49);
             this.button10.Name = "button10";
             this.button10.Size = new System.Drawing.Size(122, 40);
             this.button10.TabIndex = 52;
@@ -191,13 +178,79 @@
             this.button10.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button10.UseVisualStyleBackColor = false;
             // 
+            // bt_Clientes
+            // 
+            this.bt_Clientes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(166)))), ((int)(((byte)(166)))));
+            this.bt_Clientes.FlatAppearance.BorderSize = 0;
+            this.bt_Clientes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_Clientes.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_Clientes.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.bt_Clientes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.bt_Clientes.Location = new System.Drawing.Point(131, 49);
+            this.bt_Clientes.Name = "bt_Clientes";
+            this.bt_Clientes.Size = new System.Drawing.Size(122, 40);
+            this.bt_Clientes.TabIndex = 52;
+            this.bt_Clientes.Text = "Clientes";
+            this.bt_Clientes.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.bt_Clientes.UseVisualStyleBackColor = false;
+            this.bt_Clientes.Visible = false;
+            // 
+            // bt_CadFor
+            // 
+            this.bt_CadFor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(166)))), ((int)(((byte)(166)))));
+            this.bt_CadFor.FlatAppearance.BorderSize = 0;
+            this.bt_CadFor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_CadFor.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_CadFor.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.bt_CadFor.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.bt_CadFor.Location = new System.Drawing.Point(3, 95);
+            this.bt_CadFor.Name = "bt_CadFor";
+            this.bt_CadFor.Size = new System.Drawing.Size(122, 40);
+            this.bt_CadFor.TabIndex = 52;
+            this.bt_CadFor.Text = "Fornecedores";
+            this.bt_CadFor.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.bt_CadFor.UseVisualStyleBackColor = false;
+            this.bt_CadFor.Click += new System.EventHandler(this.bt_CadFor_Click);
+            // 
+            // bt_cadVen
+            // 
+            this.bt_cadVen.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(166)))), ((int)(((byte)(166)))));
+            this.bt_cadVen.FlatAppearance.BorderSize = 0;
+            this.bt_cadVen.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_cadVen.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_cadVen.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.bt_cadVen.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.bt_cadVen.Location = new System.Drawing.Point(131, 95);
+            this.bt_cadVen.Name = "bt_cadVen";
+            this.bt_cadVen.Size = new System.Drawing.Size(122, 40);
+            this.bt_cadVen.TabIndex = 52;
+            this.bt_cadVen.Text = "Vendedores";
+            this.bt_cadVen.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.bt_cadVen.UseVisualStyleBackColor = false;
+            this.bt_cadVen.Click += new System.EventHandler(this.bt_cadVen_Click);
+            // 
+            // bt_ConfNF
+            // 
+            this.bt_ConfNF.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(166)))), ((int)(((byte)(166)))));
+            this.bt_ConfNF.FlatAppearance.BorderSize = 0;
+            this.bt_ConfNF.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_ConfNF.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_ConfNF.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.bt_ConfNF.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.bt_ConfNF.Location = new System.Drawing.Point(3, 49);
+            this.bt_ConfNF.Name = "bt_ConfNF";
+            this.bt_ConfNF.Size = new System.Drawing.Size(122, 40);
+            this.bt_ConfNF.TabIndex = 52;
+            this.bt_ConfNF.Text = "Configuração de Notas";
+            this.bt_ConfNF.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.bt_ConfNF.UseVisualStyleBackColor = false;
+            this.bt_ConfNF.Visible = false;
+            // 
             // Pnl_DadosGerais
             // 
             this.Pnl_DadosGerais.Controls.Add(this.bt_cadEmp);
-            this.Pnl_DadosGerais.Controls.Add(this.bt_CadFor);
-            this.Pnl_DadosGerais.Controls.Add(this.bt_cadVen);
             this.Pnl_DadosGerais.Controls.Add(this.bt_CadVeic);
-            this.Pnl_DadosGerais.Controls.Add(this.bt_Clientes);
+            this.Pnl_DadosGerais.Controls.Add(this.bt_ConfNF);
             this.Pnl_DadosGerais.Location = new System.Drawing.Point(12, 140);
             this.Pnl_DadosGerais.Name = "Pnl_DadosGerais";
             this.Pnl_DadosGerais.Size = new System.Drawing.Size(258, 201);
@@ -222,40 +275,6 @@
             this.bt_cadEmp.UseVisualStyleBackColor = false;
             this.bt_cadEmp.Click += new System.EventHandler(this.bt_cadEmp_Click);
             // 
-            // bt_CadFor
-            // 
-            this.bt_CadFor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(166)))), ((int)(((byte)(166)))));
-            this.bt_CadFor.FlatAppearance.BorderSize = 0;
-            this.bt_CadFor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bt_CadFor.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_CadFor.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.bt_CadFor.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.bt_CadFor.Location = new System.Drawing.Point(131, 3);
-            this.bt_CadFor.Name = "bt_CadFor";
-            this.bt_CadFor.Size = new System.Drawing.Size(122, 40);
-            this.bt_CadFor.TabIndex = 52;
-            this.bt_CadFor.Text = "Fornecedores";
-            this.bt_CadFor.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.bt_CadFor.UseVisualStyleBackColor = false;
-            this.bt_CadFor.Click += new System.EventHandler(this.bt_CadFor_Click);
-            // 
-            // bt_cadVen
-            // 
-            this.bt_cadVen.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(166)))), ((int)(((byte)(166)))));
-            this.bt_cadVen.FlatAppearance.BorderSize = 0;
-            this.bt_cadVen.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bt_cadVen.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_cadVen.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.bt_cadVen.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.bt_cadVen.Location = new System.Drawing.Point(3, 49);
-            this.bt_cadVen.Name = "bt_cadVen";
-            this.bt_cadVen.Size = new System.Drawing.Size(122, 40);
-            this.bt_cadVen.TabIndex = 52;
-            this.bt_cadVen.Text = "Vendedores";
-            this.bt_cadVen.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.bt_cadVen.UseVisualStyleBackColor = false;
-            this.bt_cadVen.Click += new System.EventHandler(this.bt_cadVen_Click);
-            // 
             // bt_CadVeic
             // 
             this.bt_CadVeic.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(166)))), ((int)(((byte)(166)))));
@@ -264,7 +283,7 @@
             this.bt_CadVeic.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_CadVeic.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.bt_CadVeic.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.bt_CadVeic.Location = new System.Drawing.Point(131, 49);
+            this.bt_CadVeic.Location = new System.Drawing.Point(131, 3);
             this.bt_CadVeic.Name = "bt_CadVeic";
             this.bt_CadVeic.Size = new System.Drawing.Size(122, 40);
             this.bt_CadVeic.TabIndex = 52;
@@ -272,22 +291,6 @@
             this.bt_CadVeic.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.bt_CadVeic.UseVisualStyleBackColor = false;
             this.bt_CadVeic.Click += new System.EventHandler(this.bt_CadVeic_Click);
-            // 
-            // bt_Clientes
-            // 
-            this.bt_Clientes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(166)))), ((int)(((byte)(166)))));
-            this.bt_Clientes.FlatAppearance.BorderSize = 0;
-            this.bt_Clientes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bt_Clientes.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_Clientes.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.bt_Clientes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.bt_Clientes.Location = new System.Drawing.Point(3, 95);
-            this.bt_Clientes.Name = "bt_Clientes";
-            this.bt_Clientes.Size = new System.Drawing.Size(122, 40);
-            this.bt_Clientes.TabIndex = 52;
-            this.bt_Clientes.Text = "Clientes";
-            this.bt_Clientes.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.bt_Clientes.UseVisualStyleBackColor = false;
             // 
             // Pnl_Estoque
             // 
@@ -351,6 +354,7 @@
             this.bt_AjustaEst.Text = "Ajuste de Estoque";
             this.bt_AjustaEst.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.bt_AjustaEst.UseVisualStyleBackColor = false;
+            this.bt_AjustaEst.Visible = false;
             // 
             // bt_MovProdutos
             // 
@@ -367,6 +371,7 @@
             this.bt_MovProdutos.Text = "Movimentação de Produtos";
             this.bt_MovProdutos.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.bt_MovProdutos.UseVisualStyleBackColor = false;
+            this.bt_MovProdutos.Visible = false;
             // 
             // bt_EstoqueAtual
             // 
@@ -383,6 +388,7 @@
             this.bt_EstoqueAtual.Text = "Saldo Atual do Estoque";
             this.bt_EstoqueAtual.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.bt_EstoqueAtual.UseVisualStyleBackColor = false;
+            this.bt_EstoqueAtual.Visible = false;
             // 
             // bt_Menu05
             // 
@@ -487,6 +493,21 @@
             this.panel1.Size = new System.Drawing.Size(322, 40);
             this.panel1.TabIndex = 16;
             // 
+            // tb_Versao
+            // 
+            this.tb_Versao.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.tb_Versao.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.tb_Versao.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tb_Versao.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold);
+            this.tb_Versao.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.tb_Versao.Location = new System.Drawing.Point(748, 509);
+            this.tb_Versao.Name = "tb_Versao";
+            this.tb_Versao.ReadOnly = true;
+            this.tb_Versao.Size = new System.Drawing.Size(114, 20);
+            this.tb_Versao.TabIndex = 12;
+            this.tb_Versao.Text = "Versão - 1";
+            this.tb_Versao.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
             // bt_Usuarios
             // 
             this.bt_Usuarios.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
@@ -521,28 +542,13 @@
             this.bt_Conexao.UseVisualStyleBackColor = false;
             this.bt_Conexao.Visible = false;
             // 
-            // tb_Versao
-            // 
-            this.tb_Versao.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.tb_Versao.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.tb_Versao.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tb_Versao.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold);
-            this.tb_Versao.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.tb_Versao.Location = new System.Drawing.Point(748, 509);
-            this.tb_Versao.Name = "tb_Versao";
-            this.tb_Versao.ReadOnly = true;
-            this.tb_Versao.Size = new System.Drawing.Size(114, 20);
-            this.tb_Versao.TabIndex = 12;
-            this.tb_Versao.Text = "Versão - 1";
-            this.tb_Versao.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
             // Home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(874, 544);
-            this.Controls.Add(this.Pnl_DadosGerais);
+            this.Controls.Add(this.pnl_Movimentacao);
             this.Controls.Add(this.Pnl_Estoque);
             this.Controls.Add(this.tb_Versao);
             this.Controls.Add(this.bt_Usuarios);
@@ -554,7 +560,7 @@
             this.Controls.Add(this.bt_Menu02);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.pnl_Movimentacao);
+            this.Controls.Add(this.Pnl_DadosGerais);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Home";
@@ -588,13 +594,10 @@
         private System.Windows.Forms.Button bt_CadFor;
         private System.Windows.Forms.Button bt_cadVen;
         private System.Windows.Forms.Button bt_CadVeic;
-        private System.Windows.Forms.Button bt_Clientes;
         private System.Windows.Forms.FlowLayoutPanel Pnl_Estoque;
         private System.Windows.Forms.Button bt_cadLocal;
         private System.Windows.Forms.Button bt_cadPro;
         private System.Windows.Forms.Button bt_AjustaEst;
-        private System.Windows.Forms.Button bt_MovProdutos;
-        private System.Windows.Forms.Button bt_EstoqueAtual;
         private System.Windows.Forms.Button bt_Menu05;
         private System.Windows.Forms.Button bt_Menu04;
         private System.Windows.Forms.Button bt_Menu03;
@@ -605,5 +608,8 @@
         private System.Windows.Forms.TextBox tb_Versao;
         private System.Windows.Forms.Button bt_Usuarios;
         private System.Windows.Forms.Button bt_Conexao;
+        private System.Windows.Forms.Button bt_Clientes;
+        private System.Windows.Forms.Button bt_MovProdutos;
+        private System.Windows.Forms.Button bt_EstoqueAtual;
     }
 }
