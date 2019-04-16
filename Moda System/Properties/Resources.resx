@@ -142,17 +142,20 @@
   <data name="refresh2_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\refresh2_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Minimize_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Minimize_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="dbConfirm32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\dbConfirm32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Mais3_24x24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Mais3_24x24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="DBPesquisar32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\DBPesquisar32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Fechar1_48x48" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Fechar1_48x48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="mais_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\mais_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="menos_24x24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\menos_24x24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="bt_Cadastrar2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\bt_Cadastrar2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -160,8 +163,8 @@
   <data name="Login1_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Login1_32x321.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Cadeado2_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Cadeado2_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Cadeado_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Cadeado_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="eye_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\eye_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -184,17 +187,23 @@
   <data name="bt_Cadastrar_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\bt_Cadastrar_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Close 32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Close 32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Logout_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Logout_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="bt_DesLiga" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\bt_DesLiga.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="download_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\download_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Fechar1_48x48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Fechar1_48x48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="LogoModaSystem_Azul" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\LogoModaSystem_Azul.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Close" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Close.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Chaves_48x48" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Chaves_48x48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -217,8 +226,8 @@
   <data name="menos_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\menos_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="eye1_24x24" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\eye1_24x24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="download_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\download_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="bt_Confirmar" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\bt_Confirmar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -232,20 +241,23 @@
   <data name="bt_Confirma_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\bt_Confirma_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Cadeado_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Cadeado_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="eye1_24x24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\eye1_24x24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mais_24x24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mais_24x24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="search_24" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\search_24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Minimize_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Minimize_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="DBCadastrar32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DBCadastrar32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="bt_Liga" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\bt_Liga.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Close" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Close.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Cadeado2_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Cadeado2_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Close3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Close3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -268,22 +280,31 @@
   <data name="Conn2_24x24" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Conn2_24x24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="DBCadastrar32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\DBCadastrar32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Mais2_24x24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Mais2_24x24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mais_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mais_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Close2 32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Close2 32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Menos3_24x24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Menos3_24x24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Fechar1_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Fechar1_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Close 32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Close 32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="DBModificar32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DBModificar32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Close1_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Close1_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="DBModificar32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\DBModificar32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Menos2_24x24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Menos2_24x24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DBEliminar32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DBEliminar32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

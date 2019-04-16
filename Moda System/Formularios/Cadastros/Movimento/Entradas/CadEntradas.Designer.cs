@@ -28,31 +28,35 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CadEntradas));
             this.panel1 = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
             this.bt_Fechar = new System.Windows.Forms.Button();
-            this.bt_BuscarXML = new System.Windows.Forms.Button();
             this.tb_patchXML = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.tb_NFEntrada = new Syncfusion.Windows.Forms.Tools.TabControlAdv();
             this.tabPageAdv1 = new Syncfusion.Windows.Forms.Tools.TabPageAdv();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.currencyEdit12 = new Syncfusion.Windows.Forms.Tools.CurrencyEdit();
-            this.currencyEdit6 = new Syncfusion.Windows.Forms.Tools.CurrencyEdit();
-            this.currencyEdit11 = new Syncfusion.Windows.Forms.Tools.CurrencyEdit();
-            this.currencyEdit5 = new Syncfusion.Windows.Forms.Tools.CurrencyEdit();
-            this.currencyEdit10 = new Syncfusion.Windows.Forms.Tools.CurrencyEdit();
-            this.currencyEdit4 = new Syncfusion.Windows.Forms.Tools.CurrencyEdit();
-            this.currencyEdit9 = new Syncfusion.Windows.Forms.Tools.CurrencyEdit();
-            this.currencyEdit3 = new Syncfusion.Windows.Forms.Tools.CurrencyEdit();
-            this.currencyEdit8 = new Syncfusion.Windows.Forms.Tools.CurrencyEdit();
-            this.label26 = new System.Windows.Forms.Label();
+            this.currencyTextBox7 = new Syncfusion.Windows.Forms.Tools.CurrencyTextBox();
+            this.currencyTextBox12 = new Syncfusion.Windows.Forms.Tools.CurrencyTextBox();
+            this.currencyTextBox5 = new Syncfusion.Windows.Forms.Tools.CurrencyTextBox();
+            this.currencyTextBox11 = new Syncfusion.Windows.Forms.Tools.CurrencyTextBox();
+            this.currencyTextBox3 = new Syncfusion.Windows.Forms.Tools.CurrencyTextBox();
+            this.currencyTextBox10 = new Syncfusion.Windows.Forms.Tools.CurrencyTextBox();
+            this.currencyTextBox6 = new Syncfusion.Windows.Forms.Tools.CurrencyTextBox();
+            this.currencyTextBox9 = new Syncfusion.Windows.Forms.Tools.CurrencyTextBox();
+            this.currencyTextBox4 = new Syncfusion.Windows.Forms.Tools.CurrencyTextBox();
+            this.currencyTextBox8 = new Syncfusion.Windows.Forms.Tools.CurrencyTextBox();
+            this.currencyTextBox2 = new Syncfusion.Windows.Forms.Tools.CurrencyTextBox();
             this.label15 = new System.Windows.Forms.Label();
-            this.currencyEdit7 = new Syncfusion.Windows.Forms.Tools.CurrencyEdit();
             this.label25 = new System.Windows.Forms.Label();
-            this.currencyEdit1 = new Syncfusion.Windows.Forms.Tools.CurrencyEdit();
             this.label24 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
@@ -80,60 +84,84 @@
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.textBox3 = new System.Windows.Forms.TextBox();
+            this.currencyTextBox16 = new Syncfusion.Windows.Forms.Tools.CurrencyTextBox();
+            this.currencyTextBox15 = new Syncfusion.Windows.Forms.Tools.CurrencyTextBox();
+            this.currencyTextBox14 = new Syncfusion.Windows.Forms.Tools.CurrencyTextBox();
+            this.currencyTextBox13 = new Syncfusion.Windows.Forms.Tools.CurrencyTextBox();
+            this.label29 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.label28 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
+            this.label26 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
+            this.label27 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.tabPageAdv2 = new Syncfusion.Windows.Forms.Tools.TabPageAdv();
-            this.label27 = new System.Windows.Forms.Label();
-            this.currencyEdit13 = new Syncfusion.Windows.Forms.Tools.CurrencyEdit();
-            this.label28 = new System.Windows.Forms.Label();
-            this.currencyEdit14 = new Syncfusion.Windows.Forms.Tools.CurrencyEdit();
-            this.label29 = new System.Windows.Forms.Label();
-            this.currencyEdit15 = new Syncfusion.Windows.Forms.Tools.CurrencyEdit();
-            this.currencyEdit2 = new Syncfusion.Windows.Forms.Tools.CurrencyEdit();
+            this.grid_Produtos = new System.Windows.Forms.DataGridView();
+            this.codpro = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.descpro = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.qntpro = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.qntequiv = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.unipro = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.valuni = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.valDesc = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.valtot = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.button4 = new System.Windows.Forms.Button();
+            this.bt_Cadastrar = new System.Windows.Forms.Button();
+            this.currencyTextBox20 = new Syncfusion.Windows.Forms.Tools.CurrencyTextBox();
+            this.label36 = new System.Windows.Forms.Label();
+            this.currencyTextBox21 = new Syncfusion.Windows.Forms.Tools.CurrencyTextBox();
+            this.label37 = new System.Windows.Forms.Label();
+            this.currencyTextBox19 = new Syncfusion.Windows.Forms.Tools.CurrencyTextBox();
+            this.label35 = new System.Windows.Forms.Label();
+            this.currencyTextBox18 = new Syncfusion.Windows.Forms.Tools.CurrencyTextBox();
+            this.label34 = new System.Windows.Forms.Label();
+            this.currencyTextBox17 = new Syncfusion.Windows.Forms.Tools.CurrencyTextBox();
+            this.label33 = new System.Windows.Forms.Label();
+            this.currencyTextBox1 = new Syncfusion.Windows.Forms.Tools.CurrencyTextBox();
+            this.label30 = new System.Windows.Forms.Label();
+            this.label32 = new System.Windows.Forms.Label();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.textBox11 = new System.Windows.Forms.TextBox();
+            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.label31 = new System.Windows.Forms.Label();
+            this.bt_BuscarXML = new System.Windows.Forms.Button();
+            this.bt_Gravar = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tb_NFEntrada)).BeginInit();
             this.tb_NFEntrada.SuspendLayout();
             this.tabPageAdv1.SuspendLayout();
             this.groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.currencyEdit12)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.currencyEdit12.TextBox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.currencyEdit6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.currencyEdit6.TextBox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.currencyEdit11)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.currencyEdit11.TextBox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.currencyEdit5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.currencyEdit5.TextBox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.currencyEdit10)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.currencyEdit10.TextBox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.currencyEdit4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.currencyEdit4.TextBox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.currencyEdit9)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.currencyEdit9.TextBox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.currencyEdit3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.currencyEdit3.TextBox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.currencyEdit8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.currencyEdit8.TextBox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.currencyEdit7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.currencyEdit7.TextBox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.currencyEdit1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.currencyEdit1.TextBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.currencyTextBox7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.currencyTextBox12)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.currencyTextBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.currencyTextBox11)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.currencyTextBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.currencyTextBox10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.currencyTextBox6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.currencyTextBox9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.currencyTextBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.currencyTextBox8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.currencyTextBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateTimePickerAdv2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateTimePickerAdv1)).BeginInit();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.currencyEdit13)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.currencyEdit13.TextBox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.currencyEdit14)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.currencyEdit14.TextBox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.currencyEdit15)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.currencyEdit15.TextBox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.currencyEdit2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.currencyEdit2.TextBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.currencyTextBox16)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.currencyTextBox15)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.currencyTextBox14)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.currencyTextBox13)).BeginInit();
+            this.tabPageAdv2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.grid_Produtos)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.currencyTextBox20)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.currencyTextBox21)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.currencyTextBox19)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.currencyTextBox18)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.currencyTextBox17)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.currencyTextBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -174,19 +202,7 @@
             this.bt_Fechar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.bt_Fechar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.bt_Fechar.UseVisualStyleBackColor = false;
-            // 
-            // bt_BuscarXML
-            // 
-            this.bt_BuscarXML.FlatAppearance.BorderSize = 0;
-            this.bt_BuscarXML.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bt_BuscarXML.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_BuscarXML.Image = ((System.Drawing.Image)(resources.GetObject("bt_BuscarXML.Image")));
-            this.bt_BuscarXML.Location = new System.Drawing.Point(384, 76);
-            this.bt_BuscarXML.Name = "bt_BuscarXML";
-            this.bt_BuscarXML.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bt_BuscarXML.Size = new System.Drawing.Size(25, 27);
-            this.bt_BuscarXML.TabIndex = 222;
-            this.bt_BuscarXML.UseVisualStyleBackColor = true;
+            this.bt_Fechar.Click += new System.EventHandler(this.bt_Fechar_Click);
             // 
             // tb_patchXML
             // 
@@ -199,7 +215,7 @@
             this.tb_patchXML.ReadOnly = true;
             this.tb_patchXML.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.tb_patchXML.Size = new System.Drawing.Size(368, 24);
-            this.tb_patchXML.TabIndex = 224;
+            this.tb_patchXML.TabIndex = 0;
             // 
             // label2
             // 
@@ -227,20 +243,20 @@
             this.tb_NFEntrada.SeparatorColor = System.Drawing.SystemColors.ControlDark;
             this.tb_NFEntrada.ShowSeparator = false;
             this.tb_NFEntrada.Size = new System.Drawing.Size(615, 396);
-            this.tb_NFEntrada.TabIndex = 225;
+            this.tb_NFEntrada.TabIndex = 2;
             // 
             // tabPageAdv1
             // 
-            this.tabPageAdv1.Controls.Add(this.currencyEdit15);
-            this.tabPageAdv1.Controls.Add(this.currencyEdit14);
-            this.tabPageAdv1.Controls.Add(this.currencyEdit12);
-            this.tabPageAdv1.Controls.Add(this.currencyEdit13);
             this.tabPageAdv1.Controls.Add(this.groupBox2);
             this.tabPageAdv1.Controls.Add(this.comboBox1);
             this.tabPageAdv1.Controls.Add(this.dateTimePickerAdv2);
             this.tabPageAdv1.Controls.Add(this.dateTimePickerAdv1);
             this.tabPageAdv1.Controls.Add(this.groupBox1);
             this.tabPageAdv1.Controls.Add(this.textBox3);
+            this.tabPageAdv1.Controls.Add(this.currencyTextBox16);
+            this.tabPageAdv1.Controls.Add(this.currencyTextBox15);
+            this.tabPageAdv1.Controls.Add(this.currencyTextBox14);
+            this.tabPageAdv1.Controls.Add(this.currencyTextBox13);
             this.tabPageAdv1.Controls.Add(this.label29);
             this.tabPageAdv1.Controls.Add(this.label4);
             this.tabPageAdv1.Controls.Add(this.label28);
@@ -267,19 +283,19 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.currencyEdit6);
-            this.groupBox2.Controls.Add(this.currencyEdit11);
-            this.groupBox2.Controls.Add(this.currencyEdit5);
-            this.groupBox2.Controls.Add(this.currencyEdit10);
-            this.groupBox2.Controls.Add(this.currencyEdit4);
-            this.groupBox2.Controls.Add(this.currencyEdit9);
-            this.groupBox2.Controls.Add(this.currencyEdit3);
-            this.groupBox2.Controls.Add(this.currencyEdit8);
-            this.groupBox2.Controls.Add(this.currencyEdit2);
+            this.groupBox2.Controls.Add(this.currencyTextBox7);
+            this.groupBox2.Controls.Add(this.currencyTextBox12);
+            this.groupBox2.Controls.Add(this.currencyTextBox5);
+            this.groupBox2.Controls.Add(this.currencyTextBox11);
+            this.groupBox2.Controls.Add(this.currencyTextBox3);
+            this.groupBox2.Controls.Add(this.currencyTextBox10);
+            this.groupBox2.Controls.Add(this.currencyTextBox6);
+            this.groupBox2.Controls.Add(this.currencyTextBox9);
+            this.groupBox2.Controls.Add(this.currencyTextBox4);
+            this.groupBox2.Controls.Add(this.currencyTextBox8);
+            this.groupBox2.Controls.Add(this.currencyTextBox2);
             this.groupBox2.Controls.Add(this.label15);
-            this.groupBox2.Controls.Add(this.currencyEdit7);
             this.groupBox2.Controls.Add(this.label25);
-            this.groupBox2.Controls.Add(this.currencyEdit1);
             this.groupBox2.Controls.Add(this.label24);
             this.groupBox2.Controls.Add(this.label16);
             this.groupBox2.Controls.Add(this.label23);
@@ -298,367 +314,192 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Impostos / Despesas";
             // 
-            // currencyEdit12
+            // currencyTextBox7
             // 
-            this.currencyEdit12.BeforeTouchSize = new System.Drawing.Size(141, 30);
-            // 
-            // 
-            // 
-            this.currencyEdit12.CalculatorButton.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.currencyEdit12.CalculatorButton.BeforeTouchSize = new System.Drawing.Size(75, 23);
-            this.currencyEdit12.CalculatorButton.ButtonType = Syncfusion.Windows.Forms.Tools.ButtonTypes.Calculator;
-            this.currencyEdit12.CalculatorButton.Image = ((System.Drawing.Image)(resources.GetObject("currencyEdit12.CalculatorButton.Image")));
-            this.currencyEdit12.CalculatorButton.IsBackStageButton = false;
-            this.currencyEdit12.CalculatorButton.Name = "";
-            this.currencyEdit12.CalculatorButton.PreferredWidth = 24;
-            this.currencyEdit12.CalculatorButton.TabIndex = 0;
-            this.currencyEdit12.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.currencyEdit12.Location = new System.Drawing.Point(158, 325);
-            this.currencyEdit12.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(165)))), ((int)(((byte)(220)))));
-            this.currencyEdit12.Name = "currencyEdit12";
-            this.currencyEdit12.SelectionStart = 3;
-            this.currencyEdit12.Size = new System.Drawing.Size(141, 30);
-            this.currencyEdit12.TabIndex = 224;
-            // 
-            // 
-            // 
-            this.currencyEdit12.TextBox.BeforeTouchSize = new System.Drawing.Size(100, 20);
-            this.currencyEdit12.TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.currencyEdit12.TextBox.DecimalValue = new decimal(new int[] {
+            this.currencyTextBox7.BeforeTouchSize = new System.Drawing.Size(114, 25);
+            this.currencyTextBox7.DecimalValue = new decimal(new int[] {
             0,
             0,
             0,
             131072});
-            this.currencyEdit12.TextBox.Location = new System.Drawing.Point(3, 4);
-            this.currencyEdit12.TextBox.Metrocolor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(211)))), ((int)(((byte)(212)))));
-            this.currencyEdit12.TextBox.Name = "";
-            this.currencyEdit12.TextBox.NullString = "";
-            this.currencyEdit12.TextBox.Size = new System.Drawing.Size(111, 22);
-            this.currencyEdit12.TextBox.TabIndex = 0;
-            this.currencyEdit12.TextBox.Text = "R$0,00";
+            this.currencyTextBox7.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.currencyTextBox7.Location = new System.Drawing.Point(500, 34);
+            this.currencyTextBox7.Metrocolor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(211)))), ((int)(((byte)(212)))));
+            this.currencyTextBox7.Name = "currencyTextBox7";
+            this.currencyTextBox7.NullString = "";
+            this.currencyTextBox7.Size = new System.Drawing.Size(95, 23);
+            this.currencyTextBox7.TabIndex = 20;
+            this.currencyTextBox7.Text = "R$0,00";
             // 
-            // currencyEdit6
+            // currencyTextBox12
             // 
-            this.currencyEdit6.BeforeTouchSize = new System.Drawing.Size(95, 24);
-            // 
-            // 
-            // 
-            this.currencyEdit6.CalculatorButton.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.currencyEdit6.CalculatorButton.BeforeTouchSize = new System.Drawing.Size(75, 23);
-            this.currencyEdit6.CalculatorButton.ButtonType = Syncfusion.Windows.Forms.Tools.ButtonTypes.Calculator;
-            this.currencyEdit6.CalculatorButton.Image = ((System.Drawing.Image)(resources.GetObject("currencyEdit6.CalculatorButton.Image")));
-            this.currencyEdit6.CalculatorButton.IsBackStageButton = false;
-            this.currencyEdit6.CalculatorButton.Name = "";
-            this.currencyEdit6.CalculatorButton.PreferredWidth = 24;
-            this.currencyEdit6.CalculatorButton.TabIndex = 0;
-            this.currencyEdit6.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.currencyEdit6.Location = new System.Drawing.Point(500, 34);
-            this.currencyEdit6.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(165)))), ((int)(((byte)(220)))));
-            this.currencyEdit6.Name = "currencyEdit6";
-            this.currencyEdit6.SelectionStart = 3;
-            this.currencyEdit6.Size = new System.Drawing.Size(95, 24);
-            this.currencyEdit6.TabIndex = 224;
-            // 
-            // 
-            // 
-            this.currencyEdit6.TextBox.BeforeTouchSize = new System.Drawing.Size(100, 20);
-            this.currencyEdit6.TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.currencyEdit6.TextBox.DecimalValue = new decimal(new int[] {
+            this.currencyTextBox12.BeforeTouchSize = new System.Drawing.Size(114, 25);
+            this.currencyTextBox12.DecimalValue = new decimal(new int[] {
             0,
             0,
             0,
             131072});
-            this.currencyEdit6.TextBox.Location = new System.Drawing.Point(3, 4);
-            this.currencyEdit6.TextBox.Metrocolor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(211)))), ((int)(((byte)(212)))));
-            this.currencyEdit6.TextBox.Name = "";
-            this.currencyEdit6.TextBox.NullString = "";
-            this.currencyEdit6.TextBox.Size = new System.Drawing.Size(65, 16);
-            this.currencyEdit6.TextBox.TabIndex = 0;
-            this.currencyEdit6.TextBox.Text = "R$0,00";
+            this.currencyTextBox12.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.currencyTextBox12.Location = new System.Drawing.Point(302, 81);
+            this.currencyTextBox12.Metrocolor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(211)))), ((int)(((byte)(212)))));
+            this.currencyTextBox12.Name = "currencyTextBox12";
+            this.currencyTextBox12.NullString = "";
+            this.currencyTextBox12.Size = new System.Drawing.Size(95, 23);
+            this.currencyTextBox12.TabIndex = 24;
+            this.currencyTextBox12.Text = "R$0,00";
             // 
-            // currencyEdit11
+            // currencyTextBox5
             // 
-            this.currencyEdit11.BeforeTouchSize = new System.Drawing.Size(95, 24);
-            // 
-            // 
-            // 
-            this.currencyEdit11.CalculatorButton.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.currencyEdit11.CalculatorButton.BeforeTouchSize = new System.Drawing.Size(75, 23);
-            this.currencyEdit11.CalculatorButton.ButtonType = Syncfusion.Windows.Forms.Tools.ButtonTypes.Calculator;
-            this.currencyEdit11.CalculatorButton.Image = ((System.Drawing.Image)(resources.GetObject("currencyEdit11.CalculatorButton.Image")));
-            this.currencyEdit11.CalculatorButton.IsBackStageButton = false;
-            this.currencyEdit11.CalculatorButton.Name = "";
-            this.currencyEdit11.CalculatorButton.PreferredWidth = 24;
-            this.currencyEdit11.CalculatorButton.TabIndex = 0;
-            this.currencyEdit11.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.currencyEdit11.Location = new System.Drawing.Point(402, 81);
-            this.currencyEdit11.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(165)))), ((int)(((byte)(220)))));
-            this.currencyEdit11.Name = "currencyEdit11";
-            this.currencyEdit11.SelectionStart = 3;
-            this.currencyEdit11.Size = new System.Drawing.Size(95, 24);
-            this.currencyEdit11.TabIndex = 224;
-            // 
-            // 
-            // 
-            this.currencyEdit11.TextBox.BeforeTouchSize = new System.Drawing.Size(100, 20);
-            this.currencyEdit11.TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.currencyEdit11.TextBox.DecimalValue = new decimal(new int[] {
+            this.currencyTextBox5.BeforeTouchSize = new System.Drawing.Size(114, 25);
+            this.currencyTextBox5.DecimalValue = new decimal(new int[] {
             0,
             0,
             0,
             131072});
-            this.currencyEdit11.TextBox.Location = new System.Drawing.Point(3, 4);
-            this.currencyEdit11.TextBox.Metrocolor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(211)))), ((int)(((byte)(212)))));
-            this.currencyEdit11.TextBox.Name = "";
-            this.currencyEdit11.TextBox.NullString = "";
-            this.currencyEdit11.TextBox.Size = new System.Drawing.Size(65, 16);
-            this.currencyEdit11.TextBox.TabIndex = 0;
-            this.currencyEdit11.TextBox.Text = "R$0,00";
+            this.currencyTextBox5.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.currencyTextBox5.Location = new System.Drawing.Point(302, 35);
+            this.currencyTextBox5.Metrocolor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(211)))), ((int)(((byte)(212)))));
+            this.currencyTextBox5.Name = "currencyTextBox5";
+            this.currencyTextBox5.NullString = "";
+            this.currencyTextBox5.Size = new System.Drawing.Size(95, 23);
+            this.currencyTextBox5.TabIndex = 18;
+            this.currencyTextBox5.Text = "R$0,00";
             // 
-            // currencyEdit5
+            // currencyTextBox11
             // 
-            this.currencyEdit5.BeforeTouchSize = new System.Drawing.Size(95, 24);
-            // 
-            // 
-            // 
-            this.currencyEdit5.CalculatorButton.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.currencyEdit5.CalculatorButton.BeforeTouchSize = new System.Drawing.Size(75, 23);
-            this.currencyEdit5.CalculatorButton.ButtonType = Syncfusion.Windows.Forms.Tools.ButtonTypes.Calculator;
-            this.currencyEdit5.CalculatorButton.Image = ((System.Drawing.Image)(resources.GetObject("currencyEdit5.CalculatorButton.Image")));
-            this.currencyEdit5.CalculatorButton.IsBackStageButton = false;
-            this.currencyEdit5.CalculatorButton.Name = "";
-            this.currencyEdit5.CalculatorButton.PreferredWidth = 24;
-            this.currencyEdit5.CalculatorButton.TabIndex = 0;
-            this.currencyEdit5.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.currencyEdit5.Location = new System.Drawing.Point(401, 34);
-            this.currencyEdit5.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(165)))), ((int)(((byte)(220)))));
-            this.currencyEdit5.Name = "currencyEdit5";
-            this.currencyEdit5.SelectionStart = 3;
-            this.currencyEdit5.Size = new System.Drawing.Size(95, 24);
-            this.currencyEdit5.TabIndex = 224;
-            // 
-            // 
-            // 
-            this.currencyEdit5.TextBox.BeforeTouchSize = new System.Drawing.Size(100, 20);
-            this.currencyEdit5.TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.currencyEdit5.TextBox.DecimalValue = new decimal(new int[] {
+            this.currencyTextBox11.BeforeTouchSize = new System.Drawing.Size(114, 25);
+            this.currencyTextBox11.DecimalValue = new decimal(new int[] {
             0,
             0,
             0,
             131072});
-            this.currencyEdit5.TextBox.Location = new System.Drawing.Point(3, 4);
-            this.currencyEdit5.TextBox.Metrocolor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(211)))), ((int)(((byte)(212)))));
-            this.currencyEdit5.TextBox.Name = "";
-            this.currencyEdit5.TextBox.NullString = "";
-            this.currencyEdit5.TextBox.Size = new System.Drawing.Size(65, 16);
-            this.currencyEdit5.TextBox.TabIndex = 0;
-            this.currencyEdit5.TextBox.Text = "R$0,00";
+            this.currencyTextBox11.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.currencyTextBox11.Location = new System.Drawing.Point(104, 81);
+            this.currencyTextBox11.Metrocolor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(211)))), ((int)(((byte)(212)))));
+            this.currencyTextBox11.Name = "currencyTextBox11";
+            this.currencyTextBox11.NullString = "";
+            this.currencyTextBox11.Size = new System.Drawing.Size(95, 23);
+            this.currencyTextBox11.TabIndex = 22;
+            this.currencyTextBox11.Text = "R$0,00";
             // 
-            // currencyEdit10
+            // currencyTextBox3
             // 
-            this.currencyEdit10.BeforeTouchSize = new System.Drawing.Size(95, 24);
-            // 
-            // 
-            // 
-            this.currencyEdit10.CalculatorButton.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.currencyEdit10.CalculatorButton.BeforeTouchSize = new System.Drawing.Size(75, 23);
-            this.currencyEdit10.CalculatorButton.ButtonType = Syncfusion.Windows.Forms.Tools.ButtonTypes.Calculator;
-            this.currencyEdit10.CalculatorButton.Image = ((System.Drawing.Image)(resources.GetObject("currencyEdit10.CalculatorButton.Image")));
-            this.currencyEdit10.CalculatorButton.IsBackStageButton = false;
-            this.currencyEdit10.CalculatorButton.Name = "";
-            this.currencyEdit10.CalculatorButton.PreferredWidth = 24;
-            this.currencyEdit10.CalculatorButton.TabIndex = 0;
-            this.currencyEdit10.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.currencyEdit10.Location = new System.Drawing.Point(303, 81);
-            this.currencyEdit10.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(165)))), ((int)(((byte)(220)))));
-            this.currencyEdit10.Name = "currencyEdit10";
-            this.currencyEdit10.SelectionStart = 3;
-            this.currencyEdit10.Size = new System.Drawing.Size(95, 24);
-            this.currencyEdit10.TabIndex = 224;
-            // 
-            // 
-            // 
-            this.currencyEdit10.TextBox.BeforeTouchSize = new System.Drawing.Size(100, 20);
-            this.currencyEdit10.TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.currencyEdit10.TextBox.DecimalValue = new decimal(new int[] {
+            this.currencyTextBox3.BeforeTouchSize = new System.Drawing.Size(114, 25);
+            this.currencyTextBox3.DecimalValue = new decimal(new int[] {
             0,
             0,
             0,
             131072});
-            this.currencyEdit10.TextBox.Location = new System.Drawing.Point(3, 4);
-            this.currencyEdit10.TextBox.Metrocolor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(211)))), ((int)(((byte)(212)))));
-            this.currencyEdit10.TextBox.Name = "";
-            this.currencyEdit10.TextBox.NullString = "";
-            this.currencyEdit10.TextBox.Size = new System.Drawing.Size(65, 16);
-            this.currencyEdit10.TextBox.TabIndex = 0;
-            this.currencyEdit10.TextBox.Text = "R$0,00";
+            this.currencyTextBox3.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.currencyTextBox3.Location = new System.Drawing.Point(104, 35);
+            this.currencyTextBox3.Metrocolor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(211)))), ((int)(((byte)(212)))));
+            this.currencyTextBox3.Name = "currencyTextBox3";
+            this.currencyTextBox3.NullString = "";
+            this.currencyTextBox3.Size = new System.Drawing.Size(95, 23);
+            this.currencyTextBox3.TabIndex = 16;
+            this.currencyTextBox3.Text = "R$0,00";
             // 
-            // currencyEdit4
+            // currencyTextBox10
             // 
-            this.currencyEdit4.BeforeTouchSize = new System.Drawing.Size(95, 24);
-            // 
-            // 
-            // 
-            this.currencyEdit4.CalculatorButton.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.currencyEdit4.CalculatorButton.BeforeTouchSize = new System.Drawing.Size(75, 23);
-            this.currencyEdit4.CalculatorButton.ButtonType = Syncfusion.Windows.Forms.Tools.ButtonTypes.Calculator;
-            this.currencyEdit4.CalculatorButton.Image = ((System.Drawing.Image)(resources.GetObject("currencyEdit4.CalculatorButton.Image")));
-            this.currencyEdit4.CalculatorButton.IsBackStageButton = false;
-            this.currencyEdit4.CalculatorButton.Name = "";
-            this.currencyEdit4.CalculatorButton.PreferredWidth = 24;
-            this.currencyEdit4.CalculatorButton.TabIndex = 0;
-            this.currencyEdit4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.currencyEdit4.Location = new System.Drawing.Point(302, 34);
-            this.currencyEdit4.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(165)))), ((int)(((byte)(220)))));
-            this.currencyEdit4.Name = "currencyEdit4";
-            this.currencyEdit4.SelectionStart = 3;
-            this.currencyEdit4.Size = new System.Drawing.Size(95, 24);
-            this.currencyEdit4.TabIndex = 224;
-            // 
-            // 
-            // 
-            this.currencyEdit4.TextBox.BeforeTouchSize = new System.Drawing.Size(100, 20);
-            this.currencyEdit4.TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.currencyEdit4.TextBox.DecimalValue = new decimal(new int[] {
+            this.currencyTextBox10.BeforeTouchSize = new System.Drawing.Size(114, 25);
+            this.currencyTextBox10.DecimalValue = new decimal(new int[] {
             0,
             0,
             0,
             131072});
-            this.currencyEdit4.TextBox.Location = new System.Drawing.Point(3, 4);
-            this.currencyEdit4.TextBox.Metrocolor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(211)))), ((int)(((byte)(212)))));
-            this.currencyEdit4.TextBox.Name = "";
-            this.currencyEdit4.TextBox.NullString = "";
-            this.currencyEdit4.TextBox.Size = new System.Drawing.Size(65, 16);
-            this.currencyEdit4.TextBox.TabIndex = 0;
-            this.currencyEdit4.TextBox.Text = "R$0,00";
+            this.currencyTextBox10.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.currencyTextBox10.Location = new System.Drawing.Point(401, 80);
+            this.currencyTextBox10.Metrocolor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(211)))), ((int)(((byte)(212)))));
+            this.currencyTextBox10.Name = "currencyTextBox10";
+            this.currencyTextBox10.NullString = "";
+            this.currencyTextBox10.Size = new System.Drawing.Size(95, 23);
+            this.currencyTextBox10.TabIndex = 25;
+            this.currencyTextBox10.Text = "R$0,00";
             // 
-            // currencyEdit9
+            // currencyTextBox6
             // 
-            this.currencyEdit9.BeforeTouchSize = new System.Drawing.Size(95, 24);
-            // 
-            // 
-            // 
-            this.currencyEdit9.CalculatorButton.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.currencyEdit9.CalculatorButton.BeforeTouchSize = new System.Drawing.Size(75, 23);
-            this.currencyEdit9.CalculatorButton.ButtonType = Syncfusion.Windows.Forms.Tools.ButtonTypes.Calculator;
-            this.currencyEdit9.CalculatorButton.Image = ((System.Drawing.Image)(resources.GetObject("currencyEdit9.CalculatorButton.Image")));
-            this.currencyEdit9.CalculatorButton.IsBackStageButton = false;
-            this.currencyEdit9.CalculatorButton.Name = "";
-            this.currencyEdit9.CalculatorButton.PreferredWidth = 24;
-            this.currencyEdit9.CalculatorButton.TabIndex = 0;
-            this.currencyEdit9.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.currencyEdit9.Location = new System.Drawing.Point(204, 81);
-            this.currencyEdit9.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(165)))), ((int)(((byte)(220)))));
-            this.currencyEdit9.Name = "currencyEdit9";
-            this.currencyEdit9.SelectionStart = 3;
-            this.currencyEdit9.Size = new System.Drawing.Size(95, 24);
-            this.currencyEdit9.TabIndex = 224;
-            // 
-            // 
-            // 
-            this.currencyEdit9.TextBox.BeforeTouchSize = new System.Drawing.Size(100, 20);
-            this.currencyEdit9.TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.currencyEdit9.TextBox.DecimalValue = new decimal(new int[] {
+            this.currencyTextBox6.BeforeTouchSize = new System.Drawing.Size(114, 25);
+            this.currencyTextBox6.DecimalValue = new decimal(new int[] {
             0,
             0,
             0,
             131072});
-            this.currencyEdit9.TextBox.Location = new System.Drawing.Point(3, 4);
-            this.currencyEdit9.TextBox.Metrocolor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(211)))), ((int)(((byte)(212)))));
-            this.currencyEdit9.TextBox.Name = "";
-            this.currencyEdit9.TextBox.NullString = "";
-            this.currencyEdit9.TextBox.Size = new System.Drawing.Size(65, 16);
-            this.currencyEdit9.TextBox.TabIndex = 0;
-            this.currencyEdit9.TextBox.Text = "R$0,00";
+            this.currencyTextBox6.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.currencyTextBox6.Location = new System.Drawing.Point(401, 34);
+            this.currencyTextBox6.Metrocolor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(211)))), ((int)(((byte)(212)))));
+            this.currencyTextBox6.Name = "currencyTextBox6";
+            this.currencyTextBox6.NullString = "";
+            this.currencyTextBox6.Size = new System.Drawing.Size(95, 23);
+            this.currencyTextBox6.TabIndex = 19;
+            this.currencyTextBox6.Text = "R$0,00";
             // 
-            // currencyEdit3
+            // currencyTextBox9
             // 
-            this.currencyEdit3.BeforeTouchSize = new System.Drawing.Size(95, 24);
-            // 
-            // 
-            // 
-            this.currencyEdit3.CalculatorButton.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.currencyEdit3.CalculatorButton.BeforeTouchSize = new System.Drawing.Size(75, 23);
-            this.currencyEdit3.CalculatorButton.ButtonType = Syncfusion.Windows.Forms.Tools.ButtonTypes.Calculator;
-            this.currencyEdit3.CalculatorButton.Image = ((System.Drawing.Image)(resources.GetObject("currencyEdit3.CalculatorButton.Image")));
-            this.currencyEdit3.CalculatorButton.IsBackStageButton = false;
-            this.currencyEdit3.CalculatorButton.Name = "";
-            this.currencyEdit3.CalculatorButton.PreferredWidth = 24;
-            this.currencyEdit3.CalculatorButton.TabIndex = 0;
-            this.currencyEdit3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.currencyEdit3.Location = new System.Drawing.Point(203, 34);
-            this.currencyEdit3.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(165)))), ((int)(((byte)(220)))));
-            this.currencyEdit3.Name = "currencyEdit3";
-            this.currencyEdit3.SelectionStart = 3;
-            this.currencyEdit3.Size = new System.Drawing.Size(95, 24);
-            this.currencyEdit3.TabIndex = 224;
-            // 
-            // 
-            // 
-            this.currencyEdit3.TextBox.BeforeTouchSize = new System.Drawing.Size(100, 20);
-            this.currencyEdit3.TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.currencyEdit3.TextBox.DecimalValue = new decimal(new int[] {
+            this.currencyTextBox9.BeforeTouchSize = new System.Drawing.Size(114, 25);
+            this.currencyTextBox9.DecimalValue = new decimal(new int[] {
             0,
             0,
             0,
             131072});
-            this.currencyEdit3.TextBox.Location = new System.Drawing.Point(3, 4);
-            this.currencyEdit3.TextBox.Metrocolor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(211)))), ((int)(((byte)(212)))));
-            this.currencyEdit3.TextBox.Name = "";
-            this.currencyEdit3.TextBox.NullString = "";
-            this.currencyEdit3.TextBox.Size = new System.Drawing.Size(65, 16);
-            this.currencyEdit3.TextBox.TabIndex = 0;
-            this.currencyEdit3.TextBox.Text = "R$0,00";
+            this.currencyTextBox9.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.currencyTextBox9.Location = new System.Drawing.Point(203, 81);
+            this.currencyTextBox9.Metrocolor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(211)))), ((int)(((byte)(212)))));
+            this.currencyTextBox9.Name = "currencyTextBox9";
+            this.currencyTextBox9.NullString = "";
+            this.currencyTextBox9.Size = new System.Drawing.Size(95, 23);
+            this.currencyTextBox9.TabIndex = 23;
+            this.currencyTextBox9.Text = "R$0,00";
             // 
-            // currencyEdit8
+            // currencyTextBox4
             // 
-            this.currencyEdit8.BeforeTouchSize = new System.Drawing.Size(95, 24);
-            // 
-            // 
-            // 
-            this.currencyEdit8.CalculatorButton.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.currencyEdit8.CalculatorButton.BeforeTouchSize = new System.Drawing.Size(75, 23);
-            this.currencyEdit8.CalculatorButton.ButtonType = Syncfusion.Windows.Forms.Tools.ButtonTypes.Calculator;
-            this.currencyEdit8.CalculatorButton.Image = ((System.Drawing.Image)(resources.GetObject("currencyEdit8.CalculatorButton.Image")));
-            this.currencyEdit8.CalculatorButton.IsBackStageButton = false;
-            this.currencyEdit8.CalculatorButton.Name = "";
-            this.currencyEdit8.CalculatorButton.PreferredWidth = 24;
-            this.currencyEdit8.CalculatorButton.TabIndex = 0;
-            this.currencyEdit8.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.currencyEdit8.Location = new System.Drawing.Point(105, 81);
-            this.currencyEdit8.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(165)))), ((int)(((byte)(220)))));
-            this.currencyEdit8.Name = "currencyEdit8";
-            this.currencyEdit8.SelectionStart = 3;
-            this.currencyEdit8.Size = new System.Drawing.Size(95, 24);
-            this.currencyEdit8.TabIndex = 224;
-            // 
-            // 
-            // 
-            this.currencyEdit8.TextBox.BeforeTouchSize = new System.Drawing.Size(100, 20);
-            this.currencyEdit8.TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.currencyEdit8.TextBox.DecimalValue = new decimal(new int[] {
+            this.currencyTextBox4.BeforeTouchSize = new System.Drawing.Size(114, 25);
+            this.currencyTextBox4.DecimalValue = new decimal(new int[] {
             0,
             0,
             0,
             131072});
-            this.currencyEdit8.TextBox.Location = new System.Drawing.Point(3, 4);
-            this.currencyEdit8.TextBox.Metrocolor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(211)))), ((int)(((byte)(212)))));
-            this.currencyEdit8.TextBox.Name = "";
-            this.currencyEdit8.TextBox.NullString = "";
-            this.currencyEdit8.TextBox.Size = new System.Drawing.Size(65, 16);
-            this.currencyEdit8.TextBox.TabIndex = 0;
-            this.currencyEdit8.TextBox.Text = "R$0,00";
+            this.currencyTextBox4.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.currencyTextBox4.Location = new System.Drawing.Point(203, 35);
+            this.currencyTextBox4.Metrocolor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(211)))), ((int)(((byte)(212)))));
+            this.currencyTextBox4.Name = "currencyTextBox4";
+            this.currencyTextBox4.NullString = "";
+            this.currencyTextBox4.Size = new System.Drawing.Size(95, 23);
+            this.currencyTextBox4.TabIndex = 17;
+            this.currencyTextBox4.Text = "R$0,00";
             // 
-            // label26
+            // currencyTextBox8
             // 
-            this.label26.AutoSize = true;
-            this.label26.Font = new System.Drawing.Font("Segoe UI Emoji", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label26.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.label26.Location = new System.Drawing.Point(156, 307);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(127, 16);
-            this.label26.TabIndex = 223;
-            this.label26.Text = "Total de Descontos";
+            this.currencyTextBox8.BeforeTouchSize = new System.Drawing.Size(114, 25);
+            this.currencyTextBox8.DecimalValue = new decimal(new int[] {
+            0,
+            0,
+            0,
+            131072});
+            this.currencyTextBox8.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.currencyTextBox8.Location = new System.Drawing.Point(5, 81);
+            this.currencyTextBox8.Metrocolor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(211)))), ((int)(((byte)(212)))));
+            this.currencyTextBox8.Name = "currencyTextBox8";
+            this.currencyTextBox8.NullString = "";
+            this.currencyTextBox8.Size = new System.Drawing.Size(95, 23);
+            this.currencyTextBox8.TabIndex = 21;
+            this.currencyTextBox8.Text = "R$0,00";
+            // 
+            // currencyTextBox2
+            // 
+            this.currencyTextBox2.BeforeTouchSize = new System.Drawing.Size(114, 25);
+            this.currencyTextBox2.DecimalValue = new decimal(new int[] {
+            0,
+            0,
+            0,
+            131072});
+            this.currencyTextBox2.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.currencyTextBox2.Location = new System.Drawing.Point(5, 35);
+            this.currencyTextBox2.Metrocolor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(211)))), ((int)(((byte)(212)))));
+            this.currencyTextBox2.Name = "currencyTextBox2";
+            this.currencyTextBox2.NullString = "";
+            this.currencyTextBox2.Size = new System.Drawing.Size(95, 23);
+            this.currencyTextBox2.TabIndex = 15;
+            this.currencyTextBox2.Text = "R$0,00";
             // 
             // label15
             // 
@@ -671,45 +512,6 @@
             this.label15.TabIndex = 223;
             this.label15.Text = "COFINS";
             // 
-            // currencyEdit7
-            // 
-            this.currencyEdit7.BeforeTouchSize = new System.Drawing.Size(95, 24);
-            // 
-            // 
-            // 
-            this.currencyEdit7.CalculatorButton.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.currencyEdit7.CalculatorButton.BeforeTouchSize = new System.Drawing.Size(75, 23);
-            this.currencyEdit7.CalculatorButton.ButtonType = Syncfusion.Windows.Forms.Tools.ButtonTypes.Calculator;
-            this.currencyEdit7.CalculatorButton.Image = ((System.Drawing.Image)(resources.GetObject("currencyEdit7.CalculatorButton.Image")));
-            this.currencyEdit7.CalculatorButton.IsBackStageButton = false;
-            this.currencyEdit7.CalculatorButton.Name = "";
-            this.currencyEdit7.CalculatorButton.PreferredWidth = 24;
-            this.currencyEdit7.CalculatorButton.TabIndex = 0;
-            this.currencyEdit7.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.currencyEdit7.Location = new System.Drawing.Point(6, 81);
-            this.currencyEdit7.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(165)))), ((int)(((byte)(220)))));
-            this.currencyEdit7.Name = "currencyEdit7";
-            this.currencyEdit7.SelectionStart = 3;
-            this.currencyEdit7.Size = new System.Drawing.Size(95, 24);
-            this.currencyEdit7.TabIndex = 224;
-            // 
-            // 
-            // 
-            this.currencyEdit7.TextBox.BeforeTouchSize = new System.Drawing.Size(100, 20);
-            this.currencyEdit7.TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.currencyEdit7.TextBox.DecimalValue = new decimal(new int[] {
-            0,
-            0,
-            0,
-            131072});
-            this.currencyEdit7.TextBox.Location = new System.Drawing.Point(3, 4);
-            this.currencyEdit7.TextBox.Metrocolor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(211)))), ((int)(((byte)(212)))));
-            this.currencyEdit7.TextBox.Name = "";
-            this.currencyEdit7.TextBox.NullString = "";
-            this.currencyEdit7.TextBox.Size = new System.Drawing.Size(65, 16);
-            this.currencyEdit7.TextBox.TabIndex = 0;
-            this.currencyEdit7.TextBox.Text = "R$0,00";
-            // 
             // label25
             // 
             this.label25.AutoSize = true;
@@ -720,44 +522,6 @@
             this.label25.Size = new System.Drawing.Size(21, 16);
             this.label25.TabIndex = 223;
             this.label25.Text = "IPI";
-            // 
-            // currencyEdit1
-            // 
-            this.currencyEdit1.BeforeTouchSize = new System.Drawing.Size(95, 24);
-            // 
-            // 
-            // 
-            this.currencyEdit1.CalculatorButton.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.currencyEdit1.CalculatorButton.BeforeTouchSize = new System.Drawing.Size(75, 23);
-            this.currencyEdit1.CalculatorButton.ButtonType = Syncfusion.Windows.Forms.Tools.ButtonTypes.Calculator;
-            this.currencyEdit1.CalculatorButton.Image = ((System.Drawing.Image)(resources.GetObject("currencyEdit1.CalculatorButton.Image")));
-            this.currencyEdit1.CalculatorButton.IsBackStageButton = false;
-            this.currencyEdit1.CalculatorButton.Name = "";
-            this.currencyEdit1.CalculatorButton.PreferredWidth = 24;
-            this.currencyEdit1.CalculatorButton.TabIndex = 0;
-            this.currencyEdit1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.currencyEdit1.Location = new System.Drawing.Point(5, 34);
-            this.currencyEdit1.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(165)))), ((int)(((byte)(220)))));
-            this.currencyEdit1.Name = "currencyEdit1";
-            this.currencyEdit1.Size = new System.Drawing.Size(95, 24);
-            this.currencyEdit1.TabIndex = 224;
-            // 
-            // 
-            // 
-            this.currencyEdit1.TextBox.BeforeTouchSize = new System.Drawing.Size(100, 20);
-            this.currencyEdit1.TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.currencyEdit1.TextBox.DecimalValue = new decimal(new int[] {
-            0,
-            0,
-            0,
-            131072});
-            this.currencyEdit1.TextBox.Location = new System.Drawing.Point(3, 4);
-            this.currencyEdit1.TextBox.Metrocolor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(211)))), ((int)(((byte)(212)))));
-            this.currencyEdit1.TextBox.Name = "";
-            this.currencyEdit1.TextBox.NullString = "";
-            this.currencyEdit1.TextBox.Size = new System.Drawing.Size(65, 16);
-            this.currencyEdit1.TextBox.TabIndex = 0;
-            this.currencyEdit1.TextBox.Text = "R$0,00";
             // 
             // label24
             // 
@@ -860,18 +624,18 @@
             // 
             // comboBox1
             // 
+            this.comboBox1.Enabled = false;
             this.comboBox1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
-            "Digitada",
-            "Aberta",
-            "Fechada",
-            "Cancelada"});
+            "DIGITADA",
+            "ABERTA",
+            "FECHADA",
+            "CANCELADA"});
             this.comboBox1.Location = new System.Drawing.Point(502, 31);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(103, 25);
             this.comboBox1.TabIndex = 227;
-            this.comboBox1.Text = "CANCELADA";
             // 
             // dateTimePickerAdv2
             // 
@@ -898,7 +662,7 @@
             this.dateTimePickerAdv2.ShowCheckBox = false;
             this.dateTimePickerAdv2.Size = new System.Drawing.Size(103, 23);
             this.dateTimePickerAdv2.Style = Syncfusion.Windows.Forms.VisualStyle.Office2016Colorful;
-            this.dateTimePickerAdv2.TabIndex = 226;
+            this.dateTimePickerAdv2.TabIndex = 14;
             this.dateTimePickerAdv2.Value = new System.DateTime(2019, 4, 9, 22, 39, 19, 781);
             // 
             // dateTimePickerAdv1
@@ -926,7 +690,7 @@
             this.dateTimePickerAdv1.ShowCheckBox = false;
             this.dateTimePickerAdv1.Size = new System.Drawing.Size(103, 23);
             this.dateTimePickerAdv1.Style = Syncfusion.Windows.Forms.VisualStyle.Office2016Colorful;
-            this.dateTimePickerAdv1.TabIndex = 226;
+            this.dateTimePickerAdv1.TabIndex = 13;
             this.dateTimePickerAdv1.Value = new System.DateTime(2019, 4, 9, 22, 30, 26, 823);
             // 
             // groupBox1
@@ -960,7 +724,7 @@
             this.maskedTextBox1.Mask = "99,999,999/0000-99";
             this.maskedTextBox1.Name = "maskedTextBox1";
             this.maskedTextBox1.Size = new System.Drawing.Size(120, 23);
-            this.maskedTextBox1.TabIndex = 225;
+            this.maskedTextBox1.TabIndex = 8;
             this.maskedTextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // button1
@@ -968,12 +732,11 @@
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
             this.button1.Location = new System.Drawing.Point(459, 34);
             this.button1.Name = "button1";
             this.button1.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.button1.Size = new System.Drawing.Size(25, 27);
-            this.button1.TabIndex = 222;
+            this.button1.TabIndex = 6;
             this.button1.UseVisualStyleBackColor = true;
             // 
             // label8
@@ -995,10 +758,9 @@
             this.textBox9.ForeColor = System.Drawing.SystemColors.WindowText;
             this.textBox9.Location = new System.Drawing.Point(333, 82);
             this.textBox9.Name = "textBox9";
-            this.textBox9.ReadOnly = true;
             this.textBox9.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.textBox9.Size = new System.Drawing.Size(120, 25);
-            this.textBox9.TabIndex = 224;
+            this.textBox9.TabIndex = 12;
             // 
             // label12
             // 
@@ -1019,10 +781,9 @@
             this.textBox7.ForeColor = System.Drawing.SystemColors.WindowText;
             this.textBox7.Location = new System.Drawing.Point(294, 82);
             this.textBox7.Name = "textBox7";
-            this.textBox7.ReadOnly = true;
             this.textBox7.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.textBox7.Size = new System.Drawing.Size(33, 25);
-            this.textBox7.TabIndex = 224;
+            this.textBox7.TabIndex = 11;
             // 
             // label10
             // 
@@ -1043,10 +804,9 @@
             this.textBox8.ForeColor = System.Drawing.SystemColors.WindowText;
             this.textBox8.Location = new System.Drawing.Point(6, 82);
             this.textBox8.Name = "textBox8";
-            this.textBox8.ReadOnly = true;
             this.textBox8.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.textBox8.Size = new System.Drawing.Size(113, 25);
-            this.textBox8.TabIndex = 224;
+            this.textBox8.TabIndex = 9;
             // 
             // label11
             // 
@@ -1067,10 +827,9 @@
             this.textBox6.ForeColor = System.Drawing.SystemColors.WindowText;
             this.textBox6.Location = new System.Drawing.Point(125, 82);
             this.textBox6.Name = "textBox6";
-            this.textBox6.ReadOnly = true;
             this.textBox6.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.textBox6.Size = new System.Drawing.Size(163, 25);
-            this.textBox6.TabIndex = 224;
+            this.textBox6.TabIndex = 10;
             // 
             // label9
             // 
@@ -1091,10 +850,9 @@
             this.textBox5.ForeColor = System.Drawing.SystemColors.WindowText;
             this.textBox5.Location = new System.Drawing.Point(6, 36);
             this.textBox5.Name = "textBox5";
-            this.textBox5.ReadOnly = true;
             this.textBox5.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.textBox5.Size = new System.Drawing.Size(321, 23);
-            this.textBox5.TabIndex = 224;
+            this.textBox5.TabIndex = 7;
             // 
             // label7
             // 
@@ -1115,11 +873,92 @@
             this.textBox3.ForeColor = System.Drawing.SystemColors.WindowText;
             this.textBox3.Location = new System.Drawing.Point(137, 31);
             this.textBox3.Name = "textBox3";
-            this.textBox3.ReadOnly = true;
             this.textBox3.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.textBox3.Size = new System.Drawing.Size(359, 25);
-            this.textBox3.TabIndex = 224;
-            this.textBox3.Text = "NFe50190108345748000138550990001007591001029327";
+            this.textBox3.TabIndex = 5;
+            // 
+            // currencyTextBox16
+            // 
+            this.currencyTextBox16.BeforeTouchSize = new System.Drawing.Size(114, 25);
+            this.currencyTextBox16.DecimalValue = new decimal(new int[] {
+            0,
+            0,
+            0,
+            131072});
+            this.currencyTextBox16.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.currencyTextBox16.Location = new System.Drawing.Point(463, 326);
+            this.currencyTextBox16.Metrocolor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(211)))), ((int)(((byte)(212)))));
+            this.currencyTextBox16.Name = "currencyTextBox16";
+            this.currencyTextBox16.NullString = "";
+            this.currencyTextBox16.ReadOnly = true;
+            this.currencyTextBox16.Size = new System.Drawing.Size(141, 29);
+            this.currencyTextBox16.TabIndex = 225;
+            this.currencyTextBox16.Text = "R$0,00";
+            // 
+            // currencyTextBox15
+            // 
+            this.currencyTextBox15.BeforeTouchSize = new System.Drawing.Size(114, 25);
+            this.currencyTextBox15.DecimalValue = new decimal(new int[] {
+            0,
+            0,
+            0,
+            131072});
+            this.currencyTextBox15.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.currencyTextBox15.Location = new System.Drawing.Point(311, 326);
+            this.currencyTextBox15.Metrocolor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(211)))), ((int)(((byte)(212)))));
+            this.currencyTextBox15.Name = "currencyTextBox15";
+            this.currencyTextBox15.NullString = "";
+            this.currencyTextBox15.ReadOnly = true;
+            this.currencyTextBox15.Size = new System.Drawing.Size(141, 29);
+            this.currencyTextBox15.TabIndex = 225;
+            this.currencyTextBox15.Text = "R$0,00";
+            // 
+            // currencyTextBox14
+            // 
+            this.currencyTextBox14.BeforeTouchSize = new System.Drawing.Size(114, 25);
+            this.currencyTextBox14.DecimalValue = new decimal(new int[] {
+            0,
+            0,
+            0,
+            131072});
+            this.currencyTextBox14.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.currencyTextBox14.Location = new System.Drawing.Point(159, 326);
+            this.currencyTextBox14.Metrocolor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(211)))), ((int)(((byte)(212)))));
+            this.currencyTextBox14.Name = "currencyTextBox14";
+            this.currencyTextBox14.NullString = "";
+            this.currencyTextBox14.ReadOnly = true;
+            this.currencyTextBox14.Size = new System.Drawing.Size(141, 29);
+            this.currencyTextBox14.TabIndex = 225;
+            this.currencyTextBox14.Text = "R$0,00";
+            // 
+            // currencyTextBox13
+            // 
+            this.currencyTextBox13.BeforeTouchSize = new System.Drawing.Size(114, 25);
+            this.currencyTextBox13.DecimalValue = new decimal(new int[] {
+            0,
+            0,
+            0,
+            131072});
+            this.currencyTextBox13.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.currencyTextBox13.Location = new System.Drawing.Point(7, 326);
+            this.currencyTextBox13.Metrocolor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(211)))), ((int)(((byte)(212)))));
+            this.currencyTextBox13.Name = "currencyTextBox13";
+            this.currencyTextBox13.NullString = "";
+            this.currencyTextBox13.ReadOnly = true;
+            this.currencyTextBox13.Size = new System.Drawing.Size(141, 29);
+            this.currencyTextBox13.TabIndex = 225;
+            this.currencyTextBox13.Text = "R$0,00";
+            // 
+            // label29
+            // 
+            this.label29.AutoSize = true;
+            this.label29.Font = new System.Drawing.Font("Segoe UI Emoji", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label29.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.label29.Location = new System.Drawing.Point(460, 307);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(93, 16);
+            this.label29.TabIndex = 223;
+            this.label29.Text = "Total da Nota";
             // 
             // label4
             // 
@@ -1132,6 +971,17 @@
             this.label4.TabIndex = 223;
             this.label4.Text = "Chave";
             // 
+            // label28
+            // 
+            this.label28.AutoSize = true;
+            this.label28.Font = new System.Drawing.Font("Segoe UI Emoji", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label28.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.label28.Location = new System.Drawing.Point(308, 307);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(119, 16);
+            this.label28.TabIndex = 223;
+            this.label28.Text = "Total de Produtos";
+            // 
             // label13
             // 
             this.label13.AutoSize = true;
@@ -1143,6 +993,17 @@
             this.label13.TabIndex = 223;
             this.label13.Text = "Saída";
             // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.Font = new System.Drawing.Font("Segoe UI Emoji", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label26.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.label26.Location = new System.Drawing.Point(156, 307);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(127, 16);
+            this.label26.TabIndex = 223;
+            this.label26.Text = "Total de Descontos";
+            // 
             // label14
             // 
             this.label14.AutoSize = true;
@@ -1153,6 +1014,17 @@
             this.label14.Size = new System.Drawing.Size(40, 16);
             this.label14.TabIndex = 223;
             this.label14.Text = "Status";
+            // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.Font = new System.Drawing.Font("Segoe UI Emoji", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label27.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.label27.Location = new System.Drawing.Point(4, 307);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(120, 16);
+            this.label27.TabIndex = 223;
+            this.label27.Text = "Total de Impostos";
             // 
             // label6
             // 
@@ -1173,10 +1045,9 @@
             this.textBox2.ForeColor = System.Drawing.SystemColors.WindowText;
             this.textBox2.Location = new System.Drawing.Point(90, 31);
             this.textBox2.Name = "textBox2";
-            this.textBox2.ReadOnly = true;
             this.textBox2.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.textBox2.Size = new System.Drawing.Size(41, 25);
-            this.textBox2.TabIndex = 224;
+            this.textBox2.TabIndex = 4;
             // 
             // label3
             // 
@@ -1197,10 +1068,9 @@
             this.textBox1.ForeColor = System.Drawing.SystemColors.WindowText;
             this.textBox1.Location = new System.Drawing.Point(6, 31);
             this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
             this.textBox1.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.textBox1.Size = new System.Drawing.Size(78, 25);
-            this.textBox1.TabIndex = 224;
+            this.textBox1.TabIndex = 3;
             // 
             // label1
             // 
@@ -1215,6 +1085,26 @@
             // 
             // tabPageAdv2
             // 
+            this.tabPageAdv2.Controls.Add(this.grid_Produtos);
+            this.tabPageAdv2.Controls.Add(this.button4);
+            this.tabPageAdv2.Controls.Add(this.bt_Cadastrar);
+            this.tabPageAdv2.Controls.Add(this.currencyTextBox20);
+            this.tabPageAdv2.Controls.Add(this.label36);
+            this.tabPageAdv2.Controls.Add(this.currencyTextBox21);
+            this.tabPageAdv2.Controls.Add(this.label37);
+            this.tabPageAdv2.Controls.Add(this.currencyTextBox19);
+            this.tabPageAdv2.Controls.Add(this.label35);
+            this.tabPageAdv2.Controls.Add(this.currencyTextBox18);
+            this.tabPageAdv2.Controls.Add(this.label34);
+            this.tabPageAdv2.Controls.Add(this.currencyTextBox17);
+            this.tabPageAdv2.Controls.Add(this.label33);
+            this.tabPageAdv2.Controls.Add(this.currencyTextBox1);
+            this.tabPageAdv2.Controls.Add(this.label30);
+            this.tabPageAdv2.Controls.Add(this.label32);
+            this.tabPageAdv2.Controls.Add(this.textBox4);
+            this.tabPageAdv2.Controls.Add(this.textBox11);
+            this.tabPageAdv2.Controls.Add(this.textBox10);
+            this.tabPageAdv2.Controls.Add(this.label31);
             this.tabPageAdv2.Image = null;
             this.tabPageAdv2.ImageSize = new System.Drawing.Size(16, 16);
             this.tabPageAdv2.Location = new System.Drawing.Point(1, 27);
@@ -1227,194 +1117,408 @@
             this.tabPageAdv2.Text = "Produtos";
             this.tabPageAdv2.ThemesEnabled = false;
             // 
-            // label27
+            // grid_Produtos
             // 
-            this.label27.AutoSize = true;
-            this.label27.Font = new System.Drawing.Font("Segoe UI Emoji", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label27.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.label27.Location = new System.Drawing.Point(3, 307);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(120, 16);
-            this.label27.TabIndex = 223;
-            this.label27.Text = "Total de Impostos";
+            this.grid_Produtos.AllowUserToDeleteRows = false;
+            this.grid_Produtos.BackgroundColor = System.Drawing.Color.WhiteSmoke;
+            this.grid_Produtos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.grid_Produtos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.codpro,
+            this.descpro,
+            this.qntpro,
+            this.qntequiv,
+            this.unipro,
+            this.valuni,
+            this.valDesc,
+            this.valtot});
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.WhiteSmoke;
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            dataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.grid_Produtos.DefaultCellStyle = dataGridViewCellStyle7;
+            this.grid_Produtos.Location = new System.Drawing.Point(17, 120);
+            this.grid_Produtos.Name = "grid_Produtos";
+            this.grid_Produtos.ReadOnly = true;
+            this.grid_Produtos.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.grid_Produtos.RowHeadersVisible = false;
+            this.grid_Produtos.Size = new System.Drawing.Size(586, 186);
+            this.grid_Produtos.TabIndex = 230;
             // 
-            // currencyEdit13
+            // codpro
             // 
-            this.currencyEdit13.BeforeTouchSize = new System.Drawing.Size(141, 30);
+            this.codpro.HeaderText = "Cód";
+            this.codpro.Name = "codpro";
+            this.codpro.ReadOnly = true;
+            this.codpro.Width = 40;
             // 
+            // descpro
             // 
+            this.descpro.HeaderText = "Produto";
+            this.descpro.Name = "descpro";
+            this.descpro.ReadOnly = true;
+            this.descpro.Width = 200;
             // 
-            this.currencyEdit13.CalculatorButton.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.currencyEdit13.CalculatorButton.BeforeTouchSize = new System.Drawing.Size(75, 23);
-            this.currencyEdit13.CalculatorButton.ButtonType = Syncfusion.Windows.Forms.Tools.ButtonTypes.Calculator;
-            this.currencyEdit13.CalculatorButton.Image = ((System.Drawing.Image)(resources.GetObject("currencyEdit13.CalculatorButton.Image")));
-            this.currencyEdit13.CalculatorButton.IsBackStageButton = false;
-            this.currencyEdit13.CalculatorButton.Name = "";
-            this.currencyEdit13.CalculatorButton.PreferredWidth = 24;
-            this.currencyEdit13.CalculatorButton.TabIndex = 0;
-            this.currencyEdit13.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.currencyEdit13.Location = new System.Drawing.Point(6, 325);
-            this.currencyEdit13.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(165)))), ((int)(((byte)(220)))));
-            this.currencyEdit13.Name = "currencyEdit13";
-            this.currencyEdit13.SelectionStart = 3;
-            this.currencyEdit13.Size = new System.Drawing.Size(141, 30);
-            this.currencyEdit13.TabIndex = 224;
+            // qntpro
             // 
+            dataGridViewCellStyle1.Format = "N2";
+            dataGridViewCellStyle1.NullValue = null;
+            this.qntpro.DefaultCellStyle = dataGridViewCellStyle1;
+            this.qntpro.HeaderText = "Quantidade";
+            this.qntpro.Name = "qntpro";
+            this.qntpro.ReadOnly = true;
             // 
+            // qntequiv
             // 
-            this.currencyEdit13.TextBox.BeforeTouchSize = new System.Drawing.Size(100, 20);
-            this.currencyEdit13.TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.currencyEdit13.TextBox.DecimalValue = new decimal(new int[] {
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.Format = "N";
+            this.qntequiv.DefaultCellStyle = dataGridViewCellStyle2;
+            this.qntequiv.HeaderText = "EQV";
+            this.qntequiv.Name = "qntequiv";
+            this.qntequiv.ReadOnly = true;
+            this.qntequiv.Width = 40;
+            // 
+            // unipro
+            // 
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.unipro.DefaultCellStyle = dataGridViewCellStyle3;
+            this.unipro.HeaderText = "UN";
+            this.unipro.Name = "unipro";
+            this.unipro.ReadOnly = true;
+            this.unipro.Width = 40;
+            // 
+            // valuni
+            // 
+            dataGridViewCellStyle4.Format = "C2";
+            this.valuni.DefaultCellStyle = dataGridViewCellStyle4;
+            this.valuni.HeaderText = "Val. Unitário";
+            this.valuni.Name = "valuni";
+            this.valuni.ReadOnly = true;
+            // 
+            // valDesc
+            // 
+            dataGridViewCellStyle5.Format = "C2";
+            this.valDesc.DefaultCellStyle = dataGridViewCellStyle5;
+            this.valDesc.HeaderText = "Desconto";
+            this.valDesc.Name = "valDesc";
+            this.valDesc.ReadOnly = true;
+            // 
+            // valtot
+            // 
+            dataGridViewCellStyle6.Format = "C2";
+            this.valtot.DefaultCellStyle = dataGridViewCellStyle6;
+            this.valtot.HeaderText = "Val. Total";
+            this.valtot.Name = "valtot";
+            this.valtot.ReadOnly = true;
+            // 
+            // button4
+            // 
+            this.button4.BackColor = System.Drawing.Color.Transparent;
+            this.button4.FlatAppearance.BorderSize = 0;
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.button4.Image = global::Moda_System.Properties.Resources.DBEliminar32x32;
+            this.button4.Location = new System.Drawing.Point(525, 81);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(78, 41);
+            this.button4.TabIndex = 32;
+            this.button4.Text = "Del";
+            this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button4.UseVisualStyleBackColor = false;
+            // 
+            // bt_Cadastrar
+            // 
+            this.bt_Cadastrar.BackColor = System.Drawing.Color.Transparent;
+            this.bt_Cadastrar.FlatAppearance.BorderSize = 0;
+            this.bt_Cadastrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_Cadastrar.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_Cadastrar.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.bt_Cadastrar.Image = global::Moda_System.Properties.Resources.DBCadastrar32x32;
+            this.bt_Cadastrar.Location = new System.Drawing.Point(441, 81);
+            this.bt_Cadastrar.Name = "bt_Cadastrar";
+            this.bt_Cadastrar.Size = new System.Drawing.Size(78, 41);
+            this.bt_Cadastrar.TabIndex = 31;
+            this.bt_Cadastrar.Text = "Add";
+            this.bt_Cadastrar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.bt_Cadastrar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.bt_Cadastrar.UseVisualStyleBackColor = false;
+            // 
+            // currencyTextBox20
+            // 
+            this.currencyTextBox20.BeforeTouchSize = new System.Drawing.Size(114, 25);
+            this.currencyTextBox20.DecimalValue = new decimal(new int[] {
             0,
             0,
             0,
             131072});
-            this.currencyEdit13.TextBox.Location = new System.Drawing.Point(3, 4);
-            this.currencyEdit13.TextBox.Metrocolor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(211)))), ((int)(((byte)(212)))));
-            this.currencyEdit13.TextBox.Name = "";
-            this.currencyEdit13.TextBox.NullString = "";
-            this.currencyEdit13.TextBox.Size = new System.Drawing.Size(111, 22);
-            this.currencyEdit13.TextBox.TabIndex = 0;
-            this.currencyEdit13.TextBox.Text = "R$0,00";
+            this.currencyTextBox20.Font = new System.Drawing.Font("Segoe UI Emoji", 9F);
+            this.currencyTextBox20.ForeColor = System.Drawing.Color.ForestGreen;
+            this.currencyTextBox20.Location = new System.Drawing.Point(483, 341);
+            this.currencyTextBox20.Metrocolor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(211)))), ((int)(((byte)(212)))));
+            this.currencyTextBox20.Name = "currencyTextBox20";
+            this.currencyTextBox20.NullString = "";
+            this.currencyTextBox20.PositiveColor = System.Drawing.Color.ForestGreen;
+            this.currencyTextBox20.ReadOnly = true;
+            this.currencyTextBox20.Size = new System.Drawing.Size(120, 23);
+            this.currencyTextBox20.TabIndex = 229;
+            this.currencyTextBox20.Text = "R$0,00";
             // 
-            // label28
+            // label36
             // 
-            this.label28.AutoSize = true;
-            this.label28.Font = new System.Drawing.Font("Segoe UI Emoji", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label28.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.label28.Location = new System.Drawing.Point(307, 307);
-            this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(119, 16);
-            this.label28.TabIndex = 223;
-            this.label28.Text = "Total de Produtos";
+            this.label36.AutoSize = true;
+            this.label36.Font = new System.Drawing.Font("Segoe UI Emoji", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label36.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.label36.Location = new System.Drawing.Point(369, 344);
+            this.label36.Name = "label36";
+            this.label36.Size = new System.Drawing.Size(108, 16);
+            this.label36.TabIndex = 226;
+            this.label36.Text = "Total dos Produtos";
             // 
-            // currencyEdit14
+            // currencyTextBox21
             // 
-            this.currencyEdit14.BeforeTouchSize = new System.Drawing.Size(141, 30);
-            // 
-            // 
-            // 
-            this.currencyEdit14.CalculatorButton.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.currencyEdit14.CalculatorButton.BeforeTouchSize = new System.Drawing.Size(75, 23);
-            this.currencyEdit14.CalculatorButton.ButtonType = Syncfusion.Windows.Forms.Tools.ButtonTypes.Calculator;
-            this.currencyEdit14.CalculatorButton.Image = ((System.Drawing.Image)(resources.GetObject("currencyEdit14.CalculatorButton.Image")));
-            this.currencyEdit14.CalculatorButton.IsBackStageButton = false;
-            this.currencyEdit14.CalculatorButton.Name = "";
-            this.currencyEdit14.CalculatorButton.PreferredWidth = 24;
-            this.currencyEdit14.CalculatorButton.TabIndex = 0;
-            this.currencyEdit14.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.currencyEdit14.Location = new System.Drawing.Point(310, 325);
-            this.currencyEdit14.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(165)))), ((int)(((byte)(220)))));
-            this.currencyEdit14.Name = "currencyEdit14";
-            this.currencyEdit14.SelectionStart = 3;
-            this.currencyEdit14.Size = new System.Drawing.Size(141, 30);
-            this.currencyEdit14.TabIndex = 224;
-            // 
-            // 
-            // 
-            this.currencyEdit14.TextBox.BeforeTouchSize = new System.Drawing.Size(100, 20);
-            this.currencyEdit14.TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.currencyEdit14.TextBox.DecimalValue = new decimal(new int[] {
+            this.currencyTextBox21.BeforeTouchSize = new System.Drawing.Size(114, 25);
+            this.currencyTextBox21.DecimalValue = new decimal(new int[] {
             0,
             0,
             0,
             131072});
-            this.currencyEdit14.TextBox.Location = new System.Drawing.Point(3, 4);
-            this.currencyEdit14.TextBox.Metrocolor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(211)))), ((int)(((byte)(212)))));
-            this.currencyEdit14.TextBox.Name = "";
-            this.currencyEdit14.TextBox.NullString = "";
-            this.currencyEdit14.TextBox.Size = new System.Drawing.Size(111, 22);
-            this.currencyEdit14.TextBox.TabIndex = 0;
-            this.currencyEdit14.TextBox.Text = "R$0,00";
+            this.currencyTextBox21.Font = new System.Drawing.Font("Segoe UI Emoji", 9F);
+            this.currencyTextBox21.ForeColor = System.Drawing.Color.DarkBlue;
+            this.currencyTextBox21.Location = new System.Drawing.Point(236, 312);
+            this.currencyTextBox21.Metrocolor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(211)))), ((int)(((byte)(212)))));
+            this.currencyTextBox21.Name = "currencyTextBox21";
+            this.currencyTextBox21.NullString = "";
+            this.currencyTextBox21.PositiveColor = System.Drawing.Color.DarkBlue;
+            this.currencyTextBox21.ReadOnly = true;
+            this.currencyTextBox21.Size = new System.Drawing.Size(120, 23);
+            this.currencyTextBox21.TabIndex = 229;
+            this.currencyTextBox21.Text = "R$0,00";
             // 
-            // label29
+            // label37
             // 
-            this.label29.AutoSize = true;
-            this.label29.Font = new System.Drawing.Font("Segoe UI Emoji", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label29.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.label29.Location = new System.Drawing.Point(459, 307);
-            this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(93, 16);
-            this.label29.TabIndex = 223;
-            this.label29.Text = "Total da Nota";
+            this.label37.AutoSize = true;
+            this.label37.Font = new System.Drawing.Font("Segoe UI Emoji", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label37.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.label37.Location = new System.Drawing.Point(121, 315);
+            this.label37.Name = "label37";
+            this.label37.Size = new System.Drawing.Size(109, 16);
+            this.label37.TabIndex = 226;
+            this.label37.Text = "Sub Total Produtos";
             // 
-            // currencyEdit15
+            // currencyTextBox19
             // 
-            this.currencyEdit15.BeforeTouchSize = new System.Drawing.Size(141, 30);
-            // 
-            // 
-            // 
-            this.currencyEdit15.CalculatorButton.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.currencyEdit15.CalculatorButton.BeforeTouchSize = new System.Drawing.Size(75, 23);
-            this.currencyEdit15.CalculatorButton.ButtonType = Syncfusion.Windows.Forms.Tools.ButtonTypes.Calculator;
-            this.currencyEdit15.CalculatorButton.Image = ((System.Drawing.Image)(resources.GetObject("currencyEdit15.CalculatorButton.Image")));
-            this.currencyEdit15.CalculatorButton.IsBackStageButton = false;
-            this.currencyEdit15.CalculatorButton.Name = "";
-            this.currencyEdit15.CalculatorButton.PreferredWidth = 24;
-            this.currencyEdit15.CalculatorButton.TabIndex = 0;
-            this.currencyEdit15.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.currencyEdit15.Location = new System.Drawing.Point(462, 325);
-            this.currencyEdit15.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(165)))), ((int)(((byte)(220)))));
-            this.currencyEdit15.Name = "currencyEdit15";
-            this.currencyEdit15.SelectionStart = 3;
-            this.currencyEdit15.Size = new System.Drawing.Size(141, 30);
-            this.currencyEdit15.TabIndex = 224;
-            // 
-            // 
-            // 
-            this.currencyEdit15.TextBox.BeforeTouchSize = new System.Drawing.Size(100, 20);
-            this.currencyEdit15.TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.currencyEdit15.TextBox.DecimalValue = new decimal(new int[] {
+            this.currencyTextBox19.BeforeTouchSize = new System.Drawing.Size(114, 25);
+            this.currencyTextBox19.DecimalValue = new decimal(new int[] {
             0,
             0,
             0,
             131072});
-            this.currencyEdit15.TextBox.Location = new System.Drawing.Point(3, 4);
-            this.currencyEdit15.TextBox.Metrocolor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(211)))), ((int)(((byte)(212)))));
-            this.currencyEdit15.TextBox.Name = "";
-            this.currencyEdit15.TextBox.NullString = "";
-            this.currencyEdit15.TextBox.Size = new System.Drawing.Size(111, 22);
-            this.currencyEdit15.TextBox.TabIndex = 0;
-            this.currencyEdit15.TextBox.Text = "R$0,00";
+            this.currencyTextBox19.Font = new System.Drawing.Font("Segoe UI Emoji", 9F);
+            this.currencyTextBox19.ForeColor = System.Drawing.Color.Firebrick;
+            this.currencyTextBox19.Location = new System.Drawing.Point(483, 312);
+            this.currencyTextBox19.Metrocolor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(211)))), ((int)(((byte)(212)))));
+            this.currencyTextBox19.Name = "currencyTextBox19";
+            this.currencyTextBox19.NullString = "";
+            this.currencyTextBox19.PositiveColor = System.Drawing.Color.Firebrick;
+            this.currencyTextBox19.ReadOnly = true;
+            this.currencyTextBox19.Size = new System.Drawing.Size(120, 23);
+            this.currencyTextBox19.TabIndex = 229;
+            this.currencyTextBox19.Text = "R$0,00";
             // 
-            // currencyEdit2
+            // label35
             // 
-            this.currencyEdit2.BeforeTouchSize = new System.Drawing.Size(95, 24);
+            this.label35.AutoSize = true;
+            this.label35.Font = new System.Drawing.Font("Segoe UI Emoji", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label35.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.label35.Location = new System.Drawing.Point(368, 315);
+            this.label35.Name = "label35";
+            this.label35.Size = new System.Drawing.Size(109, 16);
+            this.label35.TabIndex = 226;
+            this.label35.Text = "Total de Descontos";
             // 
+            // currencyTextBox18
             // 
-            // 
-            this.currencyEdit2.CalculatorButton.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.currencyEdit2.CalculatorButton.BeforeTouchSize = new System.Drawing.Size(75, 23);
-            this.currencyEdit2.CalculatorButton.ButtonType = Syncfusion.Windows.Forms.Tools.ButtonTypes.Calculator;
-            this.currencyEdit2.CalculatorButton.Image = ((System.Drawing.Image)(resources.GetObject("currencyEdit2.CalculatorButton.Image")));
-            this.currencyEdit2.CalculatorButton.IsBackStageButton = false;
-            this.currencyEdit2.CalculatorButton.Name = "";
-            this.currencyEdit2.CalculatorButton.PreferredWidth = 24;
-            this.currencyEdit2.CalculatorButton.TabIndex = 0;
-            this.currencyEdit2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.currencyEdit2.Location = new System.Drawing.Point(104, 34);
-            this.currencyEdit2.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(165)))), ((int)(((byte)(220)))));
-            this.currencyEdit2.Name = "currencyEdit2";
-            this.currencyEdit2.SelectionStart = 3;
-            this.currencyEdit2.Size = new System.Drawing.Size(95, 24);
-            this.currencyEdit2.TabIndex = 224;
-            // 
-            // 
-            // 
-            this.currencyEdit2.TextBox.BeforeTouchSize = new System.Drawing.Size(100, 20);
-            this.currencyEdit2.TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.currencyEdit2.TextBox.DecimalValue = new decimal(new int[] {
-            0,
+            this.currencyTextBox18.BeforeTouchSize = new System.Drawing.Size(114, 25);
+            this.currencyTextBox18.DecimalValue = new decimal(new int[] {
+            100,
             0,
             0,
             131072});
-            this.currencyEdit2.TextBox.Location = new System.Drawing.Point(3, 4);
-            this.currencyEdit2.TextBox.Metrocolor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(211)))), ((int)(((byte)(212)))));
-            this.currencyEdit2.TextBox.Name = "";
-            this.currencyEdit2.TextBox.NullString = "";
-            this.currencyEdit2.TextBox.Size = new System.Drawing.Size(65, 16);
-            this.currencyEdit2.TextBox.TabIndex = 0;
-            this.currencyEdit2.TextBox.Text = "R$0,00";
+            this.currencyTextBox18.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.currencyTextBox18.Location = new System.Drawing.Point(278, 89);
+            this.currencyTextBox18.Metrocolor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(211)))), ((int)(((byte)(212)))));
+            this.currencyTextBox18.Name = "currencyTextBox18";
+            this.currencyTextBox18.NullString = "";
+            this.currencyTextBox18.Size = new System.Drawing.Size(114, 25);
+            this.currencyTextBox18.TabIndex = 30;
+            this.currencyTextBox18.Text = "R$1,00";
+            // 
+            // label34
+            // 
+            this.label34.AutoSize = true;
+            this.label34.Font = new System.Drawing.Font("Segoe UI Emoji", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label34.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.label34.Location = new System.Drawing.Point(207, 94);
+            this.label34.Name = "label34";
+            this.label34.Size = new System.Drawing.Size(65, 16);
+            this.label34.TabIndex = 226;
+            this.label34.Text = "Valor Total";
+            // 
+            // currencyTextBox17
+            // 
+            this.currencyTextBox17.BeforeTouchSize = new System.Drawing.Size(114, 25);
+            this.currencyTextBox17.DecimalValue = new decimal(new int[] {
+            100,
+            0,
+            0,
+            131072});
+            this.currencyTextBox17.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.currencyTextBox17.Location = new System.Drawing.Point(87, 89);
+            this.currencyTextBox17.Metrocolor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(211)))), ((int)(((byte)(212)))));
+            this.currencyTextBox17.Name = "currencyTextBox17";
+            this.currencyTextBox17.NullString = "";
+            this.currencyTextBox17.Size = new System.Drawing.Size(114, 25);
+            this.currencyTextBox17.TabIndex = 29;
+            this.currencyTextBox17.Text = "R$1,00";
+            // 
+            // label33
+            // 
+            this.label33.AutoSize = true;
+            this.label33.Font = new System.Drawing.Font("Segoe UI Emoji", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label33.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.label33.Location = new System.Drawing.Point(14, 94);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(58, 16);
+            this.label33.TabIndex = 226;
+            this.label33.Text = "Desconto";
+            // 
+            // currencyTextBox1
+            // 
+            this.currencyTextBox1.BeforeTouchSize = new System.Drawing.Size(114, 25);
+            this.currencyTextBox1.DecimalValue = new decimal(new int[] {
+            100,
+            0,
+            0,
+            131072});
+            this.currencyTextBox1.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.currencyTextBox1.Location = new System.Drawing.Point(278, 53);
+            this.currencyTextBox1.Metrocolor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(211)))), ((int)(((byte)(212)))));
+            this.currencyTextBox1.Name = "currencyTextBox1";
+            this.currencyTextBox1.NullString = "";
+            this.currencyTextBox1.Size = new System.Drawing.Size(114, 25);
+            this.currencyTextBox1.TabIndex = 28;
+            this.currencyTextBox1.Text = "R$1,00";
+            // 
+            // label30
+            // 
+            this.label30.AutoSize = true;
+            this.label30.Font = new System.Drawing.Font("Segoe UI Emoji", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label30.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.label30.Location = new System.Drawing.Point(217, 56);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(55, 16);
+            this.label30.TabIndex = 226;
+            this.label30.Text = "Valor UN";
+            // 
+            // label32
+            // 
+            this.label32.AutoSize = true;
+            this.label32.Font = new System.Drawing.Font("Segoe UI Emoji", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label32.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.label32.Location = new System.Drawing.Point(14, 56);
+            this.label32.Name = "label32";
+            this.label32.Size = new System.Drawing.Size(70, 16);
+            this.label32.TabIndex = 226;
+            this.label32.Text = "Quantidade";
+            // 
+            // textBox4
+            // 
+            this.textBox4.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox4.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox4.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.textBox4.Location = new System.Drawing.Point(87, 52);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.ReadOnly = true;
+            this.textBox4.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.textBox4.Size = new System.Drawing.Size(114, 27);
+            this.textBox4.TabIndex = 27;
+            this.textBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // textBox11
+            // 
+            this.textBox11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(54)))), ((int)(((byte)(54)))));
+            this.textBox11.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox11.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox11.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.textBox11.Location = new System.Drawing.Point(216, 12);
+            this.textBox11.Name = "textBox11";
+            this.textBox11.ReadOnly = true;
+            this.textBox11.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.textBox11.Size = new System.Drawing.Size(393, 26);
+            this.textBox11.TabIndex = 228;
+            this.textBox11.Text = "Produto";
+            // 
+            // textBox10
+            // 
+            this.textBox10.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.textBox10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox10.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox10.ForeColor = System.Drawing.Color.DarkCyan;
+            this.textBox10.Location = new System.Drawing.Point(67, 13);
+            this.textBox10.Name = "textBox10";
+            this.textBox10.ReadOnly = true;
+            this.textBox10.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.textBox10.Size = new System.Drawing.Size(134, 25);
+            this.textBox10.TabIndex = 26;
+            this.textBox10.Text = "00000000000003";
+            this.textBox10.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label31
+            // 
+            this.label31.AutoSize = true;
+            this.label31.Font = new System.Drawing.Font("Segoe UI Emoji", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label31.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.label31.Location = new System.Drawing.Point(14, 19);
+            this.label31.Name = "label31";
+            this.label31.Size = new System.Drawing.Size(47, 16);
+            this.label31.TabIndex = 226;
+            this.label31.Text = "Código";
+            // 
+            // bt_BuscarXML
+            // 
+            this.bt_BuscarXML.FlatAppearance.BorderSize = 0;
+            this.bt_BuscarXML.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_BuscarXML.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_BuscarXML.Image = ((System.Drawing.Image)(resources.GetObject("bt_BuscarXML.Image")));
+            this.bt_BuscarXML.Location = new System.Drawing.Point(384, 76);
+            this.bt_BuscarXML.Name = "bt_BuscarXML";
+            this.bt_BuscarXML.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.bt_BuscarXML.Size = new System.Drawing.Size(25, 27);
+            this.bt_BuscarXML.TabIndex = 1;
+            this.bt_BuscarXML.UseVisualStyleBackColor = true;
+            // 
+            // bt_Gravar
+            // 
+            this.bt_Gravar.BackColor = System.Drawing.Color.Transparent;
+            this.bt_Gravar.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.bt_Gravar.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.bt_Gravar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_Gravar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_Gravar.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.bt_Gravar.Image = global::Moda_System.Properties.Resources.check1_32x32;
+            this.bt_Gravar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.bt_Gravar.Location = new System.Drawing.Point(482, 64);
+            this.bt_Gravar.Name = "bt_Gravar";
+            this.bt_Gravar.Size = new System.Drawing.Size(145, 44);
+            this.bt_Gravar.TabIndex = 224;
+            this.bt_Gravar.Text = "Fechar Nota";
+            this.bt_Gravar.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.bt_Gravar.UseVisualStyleBackColor = false;
             // 
             // CadEntradas
             // 
@@ -1422,6 +1526,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(54)))), ((int)(((byte)(54)))));
             this.ClientSize = new System.Drawing.Size(642, 518);
+            this.Controls.Add(this.bt_Gravar);
             this.Controls.Add(this.tb_NFEntrada);
             this.Controls.Add(this.bt_BuscarXML);
             this.Controls.Add(this.tb_patchXML);
@@ -1432,6 +1537,7 @@
             this.Name = "CadEntradas";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Nota de Entradas";
+            this.Load += new System.EventHandler(this.CadEntradas_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tb_NFEntrada)).EndInit();
@@ -1440,40 +1546,34 @@
             this.tabPageAdv1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.currencyEdit12.TextBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.currencyEdit12)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.currencyEdit6.TextBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.currencyEdit6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.currencyEdit11.TextBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.currencyEdit11)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.currencyEdit5.TextBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.currencyEdit5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.currencyEdit10.TextBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.currencyEdit10)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.currencyEdit4.TextBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.currencyEdit4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.currencyEdit9.TextBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.currencyEdit9)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.currencyEdit3.TextBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.currencyEdit3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.currencyEdit8.TextBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.currencyEdit8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.currencyEdit7.TextBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.currencyEdit7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.currencyEdit1.TextBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.currencyEdit1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.currencyTextBox7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.currencyTextBox12)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.currencyTextBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.currencyTextBox11)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.currencyTextBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.currencyTextBox10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.currencyTextBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.currencyTextBox9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.currencyTextBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.currencyTextBox8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.currencyTextBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateTimePickerAdv2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateTimePickerAdv1)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.currencyEdit13.TextBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.currencyEdit13)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.currencyEdit14.TextBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.currencyEdit14)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.currencyEdit15.TextBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.currencyEdit15)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.currencyEdit2.TextBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.currencyEdit2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.currencyTextBox16)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.currencyTextBox15)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.currencyTextBox14)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.currencyTextBox13)).EndInit();
+            this.tabPageAdv2.ResumeLayout(false);
+            this.tabPageAdv2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.grid_Produtos)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.currencyTextBox20)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.currencyTextBox21)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.currencyTextBox19)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.currencyTextBox18)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.currencyTextBox17)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.currencyTextBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1516,20 +1616,9 @@
         public System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.GroupBox groupBox2;
-        private Syncfusion.Windows.Forms.Tools.CurrencyEdit currencyEdit12;
-        private Syncfusion.Windows.Forms.Tools.CurrencyEdit currencyEdit6;
-        private Syncfusion.Windows.Forms.Tools.CurrencyEdit currencyEdit11;
-        private Syncfusion.Windows.Forms.Tools.CurrencyEdit currencyEdit5;
-        private Syncfusion.Windows.Forms.Tools.CurrencyEdit currencyEdit10;
-        private Syncfusion.Windows.Forms.Tools.CurrencyEdit currencyEdit4;
-        private Syncfusion.Windows.Forms.Tools.CurrencyEdit currencyEdit9;
-        private Syncfusion.Windows.Forms.Tools.CurrencyEdit currencyEdit3;
-        private Syncfusion.Windows.Forms.Tools.CurrencyEdit currencyEdit8;
         private System.Windows.Forms.Label label26;
         private System.Windows.Forms.Label label15;
-        private Syncfusion.Windows.Forms.Tools.CurrencyEdit currencyEdit7;
         private System.Windows.Forms.Label label25;
-        private Syncfusion.Windows.Forms.Tools.CurrencyEdit currencyEdit1;
         private System.Windows.Forms.Label label24;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label23;
@@ -1540,12 +1629,52 @@
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.ComboBox comboBox1;
-        private Syncfusion.Windows.Forms.Tools.CurrencyEdit currencyEdit15;
-        private Syncfusion.Windows.Forms.Tools.CurrencyEdit currencyEdit14;
-        private Syncfusion.Windows.Forms.Tools.CurrencyEdit currencyEdit13;
         private System.Windows.Forms.Label label29;
         private System.Windows.Forms.Label label28;
         private System.Windows.Forms.Label label27;
-        private Syncfusion.Windows.Forms.Tools.CurrencyEdit currencyEdit2;
+        private Syncfusion.Windows.Forms.Tools.CurrencyTextBox currencyTextBox1;
+        private System.Windows.Forms.Label label30;
+        private System.Windows.Forms.Label label32;
+        public System.Windows.Forms.TextBox textBox10;
+        private System.Windows.Forms.Label label31;
+        private Syncfusion.Windows.Forms.Tools.CurrencyTextBox currencyTextBox7;
+        private Syncfusion.Windows.Forms.Tools.CurrencyTextBox currencyTextBox12;
+        private Syncfusion.Windows.Forms.Tools.CurrencyTextBox currencyTextBox5;
+        private Syncfusion.Windows.Forms.Tools.CurrencyTextBox currencyTextBox11;
+        private Syncfusion.Windows.Forms.Tools.CurrencyTextBox currencyTextBox3;
+        private Syncfusion.Windows.Forms.Tools.CurrencyTextBox currencyTextBox10;
+        private Syncfusion.Windows.Forms.Tools.CurrencyTextBox currencyTextBox6;
+        private Syncfusion.Windows.Forms.Tools.CurrencyTextBox currencyTextBox9;
+        private Syncfusion.Windows.Forms.Tools.CurrencyTextBox currencyTextBox4;
+        private Syncfusion.Windows.Forms.Tools.CurrencyTextBox currencyTextBox8;
+        private Syncfusion.Windows.Forms.Tools.CurrencyTextBox currencyTextBox2;
+        private Syncfusion.Windows.Forms.Tools.CurrencyTextBox currencyTextBox16;
+        private Syncfusion.Windows.Forms.Tools.CurrencyTextBox currencyTextBox15;
+        private Syncfusion.Windows.Forms.Tools.CurrencyTextBox currencyTextBox14;
+        private Syncfusion.Windows.Forms.Tools.CurrencyTextBox currencyTextBox13;
+        public System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.DataGridView grid_Produtos;
+        private System.Windows.Forms.Button bt_Cadastrar;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn codpro;
+        private System.Windows.Forms.DataGridViewTextBoxColumn descpro;
+        private System.Windows.Forms.DataGridViewTextBoxColumn qntpro;
+        private System.Windows.Forms.DataGridViewTextBoxColumn qntequiv;
+        private System.Windows.Forms.DataGridViewTextBoxColumn unipro;
+        private System.Windows.Forms.DataGridViewTextBoxColumn valuni;
+        private System.Windows.Forms.DataGridViewTextBoxColumn valDesc;
+        private System.Windows.Forms.DataGridViewTextBoxColumn valtot;
+        private Syncfusion.Windows.Forms.Tools.CurrencyTextBox currencyTextBox18;
+        private System.Windows.Forms.Label label34;
+        private Syncfusion.Windows.Forms.Tools.CurrencyTextBox currencyTextBox17;
+        private System.Windows.Forms.Label label33;
+        public System.Windows.Forms.TextBox textBox11;
+        private Syncfusion.Windows.Forms.Tools.CurrencyTextBox currencyTextBox19;
+        private System.Windows.Forms.Label label35;
+        private Syncfusion.Windows.Forms.Tools.CurrencyTextBox currencyTextBox20;
+        private System.Windows.Forms.Label label36;
+        private Syncfusion.Windows.Forms.Tools.CurrencyTextBox currencyTextBox21;
+        private System.Windows.Forms.Label label37;
+        private System.Windows.Forms.Button bt_Gravar;
     }
 }

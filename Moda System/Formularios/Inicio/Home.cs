@@ -226,7 +226,7 @@ namespace Moda_System.Formularios.Inicio
         private void bt_EntMercadoria_Click(object sender, EventArgs e)
         {
             pnl_Movimentacao.Visible = false;
-            CadEntradas nfEnt = new CadEntradas();
+            CadEntradas nfEnt = new CadEntradas(0);
             nfEnt.ShowDialog();
         }
 

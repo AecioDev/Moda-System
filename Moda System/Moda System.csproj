@@ -70,7 +70,10 @@
       <HintPath>..\packages\MaterialSkin.0.2.1\lib\MaterialSkin.dll</HintPath>
     </Reference>
     <Reference Include="Syncfusion.Grid.Base, Version=16.4460.0.42, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+    <Reference Include="Syncfusion.Grid.Grouping.Base, Version=16.4460.0.42, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+    <Reference Include="Syncfusion.Grid.Grouping.Windows, Version=16.4460.0.42, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL" />
     <Reference Include="Syncfusion.Grid.Windows, Version=16.4460.0.42, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+    <Reference Include="Syncfusion.Grouping.Base, Version=16.4460.0.42, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
     <Reference Include="Syncfusion.Shared.Base, Version=16.4460.0.42, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
     <Reference Include="Syncfusion.Shared.Windows, Version=16.4460.0.42, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
     <Reference Include="Syncfusion.SpellChecker.Base, Version=16.4460.0.42, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
@@ -92,6 +95,9 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="UIAutomationTypes" />
+    <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Classes\1 - Model\BarrasPro.cs" />
@@ -460,6 +466,7 @@
     <None Include="packages.config" />
     <None Include="Properties\DataSources\Moda_System.Classes.Estoque.datasource" />
     <None Include="Properties\DataSources\Moda_System.Classes.PrecosPro.datasource" />
+    <None Include="Properties\DataSources\Moda_System.Classes.Produto.datasource" />
     <None Include="Properties\DataSources\Moda_System.Classes.SubGrupo.datasource" />
     <None Include="Properties\DataSources\Moda_System.Classes.Unidade.datasource" />
     <None Include="Properties\DataSources\Moda_System.Classes.Usuario.datasource" />
@@ -491,6 +498,13 @@
   <ItemGroup>
     <Content Include="Classes\Historico.txt" />
     <Content Include="ModaSystem.ico" />
+    <None Include="Resources\DBEliminar32x32.png" />
+    <None Include="Resources\Menos3_24x24.png" />
+    <None Include="Resources\Menos2_24x24.png" />
+    <EmbeddedResource Include="Resources\menos_24x24.png" />
+    <None Include="Resources\Mais3_24x24.png" />
+    <None Include="Resources\Mais2_24x24.png" />
+    <None Include="Resources\mais_24x24.png" />
     <None Include="Resources\DBModificar32x32.png" />
     <None Include="Resources\DBPesquisar32x32.png" />
     <None Include="Resources\dbConfirm32x32.png" />

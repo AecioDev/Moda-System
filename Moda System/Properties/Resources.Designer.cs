@@ -303,6 +303,16 @@ namespace Moda_System.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap DBEliminar32x32 {
+            get {
+                object obj = ResourceManager.GetObject("DBEliminar32x32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap DBModificar32x32 {
             get {
                 object obj = ResourceManager.GetObject("DBModificar32x32", resourceCulture);
@@ -503,6 +513,16 @@ namespace Moda_System.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap mais_24x24 {
+            get {
+                object obj = ResourceManager.GetObject("mais_24x24", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap mais_32x32 {
             get {
                 object obj = ResourceManager.GetObject("mais_32x32", resourceCulture);
@@ -513,9 +533,59 @@ namespace Moda_System.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Mais2_24x24 {
+            get {
+                object obj = ResourceManager.GetObject("Mais2_24x24", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Mais3_24x24 {
+            get {
+                object obj = ResourceManager.GetObject("Mais3_24x24", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap menos_24x24 {
+            get {
+                object obj = ResourceManager.GetObject("menos_24x24", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap menos_32x32 {
             get {
                 object obj = ResourceManager.GetObject("menos_32x32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Menos2_24x24 {
+            get {
+                object obj = ResourceManager.GetObject("Menos2_24x24", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Menos3_24x24 {
+            get {
+                object obj = ResourceManager.GetObject("Menos3_24x24", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
