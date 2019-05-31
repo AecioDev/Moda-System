@@ -105,6 +105,7 @@
     <Compile Include="Classes\1 - Model\ErrosDB.cs" />
     <Compile Include="Classes\1 - Model\Fornecedor.cs" />
     <Compile Include="Classes\1 - Model\Marca.cs" />
+    <Compile Include="Classes\1 - Model\MovEstoquePro.cs" />
     <Compile Include="Classes\1 - Model\PrecosPro.cs" />
     <Compile Include="Classes\1 - Model\Produto.cs" />
     <Compile Include="Classes\1 - Model\SaldoEstoque.cs" />
@@ -116,12 +117,15 @@
     <Compile Include="Classes\1 - Model\Estoque.cs" />
     <Compile Include="Classes\1 - Model\Usuario.cs" />
     <Compile Include="Classes\1 - Model\Veiculo.cs" />
+    <Compile Include="Classes\1 - Model\MovEstoque.cs" />
     <Compile Include="Classes\2 - Configuracoes\BarrasConf.cs" />
     <Compile Include="Classes\2 - Configuracoes\EmpresaConf.cs" />
     <Compile Include="Classes\2 - Configuracoes\EstoqueConf.cs" />
     <Compile Include="Classes\2 - Configuracoes\FornecedorConf.cs" />
     <Compile Include="Classes\2 - Configuracoes\GrupoConf.cs" />
     <Compile Include="Classes\2 - Configuracoes\MarcaConf.cs" />
+    <Compile Include="Classes\2 - Configuracoes\MovEstoqueConf.cs" />
+    <Compile Include="Classes\2 - Configuracoes\MovEstProConf.cs" />
     <Compile Include="Classes\2 - Configuracoes\PrecosProConf.cs" />
     <Compile Include="Classes\2 - Configuracoes\ProdutoConf.cs" />
     <Compile Include="Classes\2 - Configuracoes\SaldoEstoqueConf.cs" />
@@ -132,6 +136,8 @@
     <Compile Include="Classes\2 - Configuracoes\UsuarioConf.cs" />
     <Compile Include="Classes\2 - Configuracoes\VeiculoConf.cs" />
     <Compile Include="Classes\2 - Configuracoes\VendedorConf.cs" />
+    <Compile Include="Classes\3 - Interfaces\IMovEstoqueRepositorio.cs" />
+    <Compile Include="Classes\3 - Interfaces\IMovEstProRepositorio.cs" />
     <Compile Include="Classes\3 - Interfaces\IRepositorioBase.cs" />
     <Compile Include="Classes\3 - Interfaces\IBarrasProRepositorio.cs" />
     <Compile Include="Classes\3 - Interfaces\IEmpresaRepositorio.cs" />
@@ -153,6 +159,8 @@
     <Compile Include="Classes\4 - Repositorios\FornecedorRepositorio.cs" />
     <Compile Include="Classes\4 - Repositorios\GrupoRepositorio.cs" />
     <Compile Include="Classes\4 - Repositorios\MarcaRepositorio.cs" />
+    <Compile Include="Classes\4 - Repositorios\MovEstoqueRepositorio.cs" />
+    <Compile Include="Classes\4 - Repositorios\MovEstProRepositorio.cs" />
     <Compile Include="Classes\4 - Repositorios\PrecosProRepositorio.cs" />
     <Compile Include="Classes\4 - Repositorios\ProdutoRepositorio.cs" />
     <Compile Include="Classes\4 - Repositorios\SaldoEstoqueRepositorio.cs" />
@@ -263,6 +271,12 @@
     <Compile Include="Formularios\Cadastros\Estoque\TabelaPreco.Designer.cs">
       <DependentUpon>TabelaPreco.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\Consultas\Estoque\ConsMovEstoque.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Consultas\Estoque\ConsMovEstoque.Designer.cs">
+      <DependentUpon>ConsMovEstoque.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\Consultas\Movimento\Saídas\ConsVeiculo.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -348,6 +362,10 @@
     <Compile Include="Migrations\201904030354040_Alteracao_02042019_0.Designer.cs">
       <DependentUpon>201904030354040_Alteracao_02042019_0.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201905310313244_Inclusao_MovEstoque.cs" />
+    <Compile Include="Migrations\201905310313244_Inclusao_MovEstoque.Designer.cs">
+      <DependentUpon>201905310313244_Inclusao_MovEstoque.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Paletas.cs">
       <SubType>Form</SubType>
@@ -407,6 +425,9 @@
     <EmbeddedResource Include="Formularios\Cadastros\Estoque\TabelaPreco.resx">
       <DependentUpon>TabelaPreco.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Consultas\Estoque\ConsMovEstoque.resx">
+      <DependentUpon>ConsMovEstoque.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Consultas\Movimento\Saídas\ConsVeiculo.resx">
       <DependentUpon>ConsVeiculo.cs</DependentUpon>
     </EmbeddedResource>
@@ -451,6 +472,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201904030354040_Alteracao_02042019_0.resx">
       <DependentUpon>201904030354040_Alteracao_02042019_0.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201905310313244_Inclusao_MovEstoque.resx">
+      <DependentUpon>201905310313244_Inclusao_MovEstoque.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Paletas.resx">
       <DependentUpon>Paletas.cs</DependentUpon>

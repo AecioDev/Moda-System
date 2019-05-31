@@ -39,6 +39,8 @@ namespace Moda_System.Classes
             modelBuilder.Configurations.Add(new FornecedorConf());
             modelBuilder.Configurations.Add(new GrupoConf());
             modelBuilder.Configurations.Add(new MarcaConf());
+            modelBuilder.Configurations.Add(new MovEstoqueConf());
+            modelBuilder.Configurations.Add(new MovEstProConf());
             modelBuilder.Configurations.Add(new PrecosProConf());
             modelBuilder.Configurations.Add(new ProdutoConf());
             modelBuilder.Configurations.Add(new SaldoEstoqueConf());
@@ -57,6 +59,8 @@ namespace Moda_System.Classes
         public DbSet<Fornecedor> Fornecedor { get; set; }
         public DbSet<Grupo> Grupo { get; set; }
         public DbSet<Marca> Marca { get; set; }
+        public DbSet<MovEstoque> MovEstoque { get; set; }
+        public DbSet<MovEstoquePro> MovEstoquePro { get; set; }
         public DbSet<PrecosPro> PrecosPro { get; set; }
         public DbSet<Produto> Produto { get; set; }
         public DbSet<SaldoEstoque> SaldoEstoque { get; set; }
